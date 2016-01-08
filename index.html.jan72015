@@ -201,8 +201,6 @@ function switch_tabs(obj) {
                 <div class="tab-content" id="tabs1">--->
 
                     <!---Tab #1 content-->
-                    <p><font color = "red">Update: Jan 7, 2016: </font> My website is terribly out of date (by 7 months!). While I find the time to do this interesting task, you can check out my resume <a target="_blank" href="Vineet_Pandey-UC_San_Diego.pdf">here</a>.</p>
-                    <hr>
                     <p>I am a
                         <s>first</s> second year graduate student in Computer Science at UC&nbsp;San&nbsp;Diego.
                         <!--<a target="_blank" href="https://www.dropbox.com/s/tcelcx43ehsi9u1/Vineet_Pandey-UCSD.pdf?dl=0"><b>[Resume]</b></a>-->
