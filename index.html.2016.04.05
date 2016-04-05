@@ -110,14 +110,13 @@ function switch_tabs(obj) {
                 </ul>
             </div>
         </div>
-
         <!--
 	<p> <b>If you are an undergraduate student from BITS Pilani, then you should know about <a href="http://bits-csa.org/AECS.php" target=_blank"><font color="red">Alumni Award for Excellence in Computer Science</font></a> (for the lack of a better name). Last date to apply is October 20th.</b> </p>
 -->
         <div id="main" align="justify">
             <div id="mainleft">
                 <center>
-                    <p> Updated: Apr 05, 2016
+                    <p> Updated: Jan 22, 2016
                         <br>
                     </p>
                     <p>
@@ -129,7 +128,6 @@ function switch_tabs(obj) {
                             <a href="https://twitter.com/vineet1pandey" target="_blank"><img height="20" src="images/twitter.png" alt="twitter icon">&nbsp;</a>
                 </center>
                 </p>
-
                 <!--
 	<p><img src="images/mugshot_Vineet_Pandey.jpg" height="200" onmouseover="this.src='images/doge.jpg'" onmouseout="this.src='images/mugshot_Vineet_Pandey.jpg'"></p>
 -->
@@ -138,7 +136,7 @@ function switch_tabs(obj) {
                 <div class="leftmenu"><a target="_blank" href="http://cse.ucsd.edu">CSE, UC San Diego</a></div>
 
                 <h2>Summers</h2>
-                <div class="leftmenu"><a target="_blank" href="http://designlab.ucsd.edu">2016: Le Lab</a></div>
+                <div class="leftmenu"><a target="_blank" href="http://pub.ist.ac.at/~kchatterjee/">2016:<font color="red"> Looking for opportunities</font></a></div>
                 <div class="leftmenu"><a target="_blank" href="http://pub.ist.ac.at/~kchatterjee/">2015: Visiting student <br> at IST Austria</a></div>
                 <div class="leftmenu"><a target="_blank" href="http://research.microsoft.com/en-us/projects/cipherbase/">2014: Intern, Cipherbase team at MSR Redmond</a></div>
 
@@ -148,21 +146,8 @@ function switch_tabs(obj) {
 
                 <h2>News</h2>
                 <p><b>2016</b></p>
-                <p>May 09 - May 12: Let's meet <a target="_blank" href="http://chi2016.acm.org">
-                    CHI 2016 </a> in San Jose, CA!</p>     
-                <p>May 06 - May 08: Coming to <a target="_blank" href="https://hci4dacrossborders.wordpress.com/"> Development Consortium/ HCI Across Borders Workshop </a> in San Jose, CA?</p> 
-                <p>Apr 01: <a target="_blank" href="publications/Vineet-HCI4D_Workshop_CHI 2016-Education_across_borders-Technology_supported_mentoring_and_teambuilding.pdf">Read the final copy </a> of my naive collaboration call for Education across Borders at <i><a target="_blank" href="https://hci4dacrossborders.wordpress.com/">HCI Across Borders</a></i> workshop at CHI 2016 </p>
-                <p>Mar 30: Done with courses and <a target="_blank" href="http://www.cse.ucsd.edu/node/216"> CSE Research Exam</a> requirement for an intermediate Masters</p>
-                <p>Mar 15: <a target="_blank" href="presentations/Scaling-learner-feedback-in-MOOCs.html">Flip through my slides</a> on Scaling Learner feedback in MOOCs. 
-                    <br>Summary: Automated tools in isolation don't work, seed with instructor wisdom </p>    
-                
-                <p>Feb 29 - Mar 02:Presenting Darwin poster at<a target="_blank" href="https://cscw.acm.org/2016"> CSCW 2016</a> in San Francisco</p>    
-
-                
-                <p>Feb 07: Check out our<a target="_blank" href="http://d.ucsd.edu/framingFeedback/"> webpage for the CHI paper</a>, created by our undergrad super-RA <a target="_blank" href="http://rachelwchen.github.io/">Rachel</a> </p>    
-
-                <p>Jan 15: Submitted proposal for <i><a target="_blank" href="https://hci4dacrossborders.wordpress.com/">HCI Across Borders</a></i> workshop at CHI 2016. Topic: Education across borders. (edit: Accepted)</p>
-                <p>Jan 10: "<i>Why do sysadmins make config errors that cost millions to your company!?</i>". Read our <a target="_blank" href="http://arxiv.org/abs/1601.01747">ArXiv paper</a> about HCI view of configuration problems (w/ <a target="_blank" href="http://cseweb.ucsd.edu/~tixu/">Tianyin Xu</a>) </a> </p>
+                <p>Jan 15: Submitted proposal for <i><a target="_blank" href="https://hci4dacrossborders.wordpress.com/">HCI Across Borders</a></i> workshop at CHI 2016. Topic: Education across borders.</p>
+                <p>Jan 10: "<i>Why do sysadmins make config errors that cost millions to your company!?</i> " - <a target="_blank" href="http://arxiv.org/abs/1601.01747">ArXiv paper</a> about HCI view of configuration problems w/ <a target="_blank" href="http://cseweb.ucsd.edu/~tixu/">Tianyin Xu</a> </a> </p>
                 <p>Jan 10: Website update. &lt;howls of joy> </a> </p>
 
                 <p>Jan 04: Winter term begins. Plans: Research + one class + exploring SD more</a> </p>
@@ -172,7 +157,7 @@ function switch_tabs(obj) {
 
                 <p>Dec 15: CHI paper accepted! "Framing Feedback: Choosing Review Environment Features that Support High Quality Peer Assessment", w/ <a target="_blank" href="http://pages.ucsd.edu/~cmhicks/">Catherine Hicks</a> and <a target="_blank" href="http://cseweb.ucsd.edu/~cafraser/">Ailie Fraser</a></p>
 
-                <p> Nov 20: Paper submitted to <a target="_blank" href="http://sigmod2016.org/">SIGMOD 2016</a>. (edit: Rejected)
+                <p> Nov 20: Paper submitted to <a target="_blank" href="http://sigmod2016.org/">SIGMOD 2016</a>.
                 </p>
 
                 <p> Nov 07: Work-in-progress submitted to <a target="_blank" href="http://cscw.acm.org/2016/index.php">CSCW 2016</a>. <br>
@@ -280,33 +265,23 @@ function switch_tabs(obj) {
 
                     I work on problems in online education with <a target="_blank" href="http://d.ucsd.edu/srk/">Professor Scott Klemmer</a> at <a target="_blank" href="http://designlab.ucsd.edu">Design Lab</a>. </p>
 
-                    <p>Here is my resume (Jan 2016): <a target="_blank" href="Vineet_Pandey-UC_San_Diego.pdf" src="images/pdf-file-128.png"> <img height="16" src="images/pdf-file-128.png" alt="pdf icon"> </a></p>
+                    <p>Here is my resume: <a target="_blank" href="Vineet_Pandey-UC_San_Diego.pdf" src="images/pdf-file-128.png"> <img height="16" src="images/pdf-file-128.png" alt="pdf icon"> </a></p>
 
                 <p>
-                    In 2016 Spring (April-June), I am working on my research to answer how online students can do useful scientific work, attending <a target="_blank" href="https://hci4dacrossborders.wordpress.com/"> HCI Across Borders</a> workshop and  <a target="_blank" href="https://chi2016.acm.org/"> CHI 2016</a>.
+                    In 2016 Winter (Jan-March), I am working on my research towards building useful instructor tools in MOOCs, attending <a target="_blank" href="http://cscw.acm.org/2016/index.php">CSCW</a> and finishing my <a target="_blank" href="http://www.cse.ucsd.edu/node/216">Research Exam</a> and final course requirement.  
                 </p>
 
                 <h2>Research Experience</h2>
 
 
-                    <p>My research aims to make online education more useful for students.</p>
+                    <p>My research aims to make online education more useful to students.</p>
 
-                    <p>In my exploratory projects and prototypes, I draw ideas/ techniques from disparate areas like Machine Learning (e.g.: classifying assignment submissions), Crowdsourcing (e.g.: how can peers do non-trivial work), Programming Languages (e.g.: using program synthesis to provide feedback), Decision theory (to incentivize student participation) and Learning psychology.</p>
+                    <p>I draw ideas/ techniques from disparate areas like Machine Learning (e.g.: classifying assignment submissions), Crowdsourcing, Programming Languages (e.g.: program synthesis), Decision theory (to incentivize student participation) and Learning psychology towards exploratory projects and prototype building. </p>
 
-                    <p> Currently, I am developing tools to allow online students to do useful scientific work as part of taking online courses. 
+                    <p> Currently, I am developing tools to provide actionable insights to instructors to fix student confusion in online classrooms/ MOOCs. 
                     My recent work includes:
                     <ul> 
-
-                       <!--- <iframe src="https://docs.google.com/presentation/d/1SIWtrK6bfbBk_0-txOy9eVsTOqzaV72bsuL2p-ufcIc/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
-
-                        <li> Synthesis of current techniques to provide feedback on creative open-ended work in MOOCs. Summary: Automated tools scale instructor knowledge. Slides <a target="_blank" href="https://docs.google.com/presentation/d/1SIWtrK6bfbBk_0-txOy9eVsTOqzaV72bsuL2p-ufcIc/edit#slide=id.g128f206335_0_6">here</a></li>
-                        
-
-                        <li> Understanding the effect of review environemnt in peer review quality (<a target="_blank" href="publications/CHI2016-FramingFeedback-camera-ready.pdf">CHI 2016 paper</a>, w/ <a target="_blank" href="http://pages.ucsd.edu/~cmhicks/">Catherine Hicks</a> and <a target="_blank" href="http://cseweb.ucsd.edu/~cafraser/">Ailie Fraser</a>) 
-
-                        Project webpage: <a target="_blank" href="http://d.ucsd.edu/framingFeedback/"><b>Framing Feedback </a> </b>
-                        
-                        </li>
+                        <li> Understanding the effect of review environemnt in peer review quality (<a target="_blank" href="publications/CHI2016-FramingFeedback-camera-ready.pdf">CHI 2016 paper</a>, w/ <a target="_blank" href="http://pages.ucsd.edu/~cmhicks/">Catherine Hicks</a> and <a target="_blank" href="http://cseweb.ucsd.edu/~cafraser/">Ailie Fraser</a>) </li>
 
                         <li> Finding ways to incentivize peer interactions in online classes using game theory (<a target="_blank" href="publications/CSCW2016-WiP-Darwin-GameTheory_for_PeerAssessment.pdf">CSCW 2016 Work-in-progress</a>, w/ <a target="_blank" href="http://pub.ist.ac.at/~kchatterjee/">Krish) </a> </li>  
                         <li> Developing principles for automated and peer feedback tools (under preparation, Departmental Research Exam survey) and </li> 
@@ -342,12 +317,6 @@ function switch_tabs(obj) {
                     </p>
                     <ul>
                         <li>
-                     <p>
-                        [Workshop] Education across borders: Technology supported mentoring and teambuilding. Vineet Pandey.<a target="_blank" href="https://hci4dacrossborders.wordpress.com/"> HCI Across Borders</a> workshop at <a target="_blank" href="https://chi2016.acm.org/"> CHI 2016</a>, San Jose, CA, May 2016. <br>
-                        <a target="_blank" href="publications/Vineet-HCI4D_Workshop_CHI 2016-Education_across_borders-Technology_supported_mentoring_and_teambuilding.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
-                    </p> </li>
-
-                    <li>
                      <p>
                         Framing Feedback: Choosing Review Environment Features that Support High Quality Peer Assessment. <a target="_blank" href="http://pages.ucsd.edu/~cmhicks">Catherine M. Hicks</a>, Vineet Pandey, <a target="_blank" href="http://cseweb.ucsd.edu/~cafraser/">C. Ailie Fraser</a>, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>.<a target="_blank" href="https://chi2016.acm.org/"> CHI 2016</a>, San Jose, CA, May 2016. <br>
                         <a target="_blank" href="publications/CHI2016-FramingFeedback-camera-ready.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
@@ -417,55 +386,28 @@ function switch_tabs(obj) {
 
 </div>
 
-<a name="teaching"> </a>
+<a name="teaching">
                 <!--<div class="tab-content" id="tabs2">-->
                 <h2>Teaching Experience</h2>
                     <p>
                         <!--Tab #2 content-->
                         I have been Teaching Assistant for four quarters at the university.
-                        (Number of students below refers to number of students who filled the post-course surveys)
                         <ul>
-                            <li>Fall 2015: <a target="_blank" href="https://docs.google.com/document/d/1Cz1Uht5ttR_RfIs_6e_wS8Zg7LTzm1A8Fx1ZGNrJ1uQ/edit?ts=560c21ce#">DSGN 1 Introduction to Design </a> <br>
-                                w/ <a target="_blank" href="http://www.jnd.org/"> Don Norman</a> & <a target="_blank" href="http://hci.ucsd.edu/hollan/"> Jim Hollan</a>, w/ <a target="_blank" href="http://yasminekotturi.com/"> Yasmine Kotturi (TA) </a>
-                                <br> Summary: Mean 4+ rating (on a scale of 5) on performance by 13 students 
-                                <br> Sample quote: "<i> ..provides thorough and detailed explanations and alternative examples.</i>"
-                                <br><a target="_blank" href="teaching/DSGN1S_Pandey_Vineet_Fa16.pdf">Full Student review</a>
-                                <br><br>
+                            <li>Fall 2015: <a target="_blank" href="https://docs.google.com/document/d/1Cz1Uht5ttR_RfIs_6e_wS8Zg7LTzm1A8Fx1ZGNrJ1uQ/edit?ts=560c21ce#">DSGN 1 Introduction to Design </a> w/ <a target="_blank" href="http://www.jnd.org/"> Don Norman</a> & <a target="_blank" href="http://hci.ucsd.edu/hollan/"> Jim Hollan</a>, w/ <a target="_blank" href="http://yasminekotturi.com/"> Yasmine Kotturi </a>
+                                <br> </li>
 
-                            </li>
+                            <li> Spring 2014: <a target="_blank" href="http://cseweb.ucsd.edu/classes/sp15/cse151-a/"> CSE 150 IntroAI </a> with <a target="_blank" href="http://cseweb.ucsd.edu/~kamalika/">Kamalika Chaudhuri</a>
+                                <br> </li>
 
-                            <li> Fall 2014: <a target="_blank" href="http://d.ucsd.edu/class/grad-IxD/2014/"> CSE 216/ COGS 230: Graduate Human-Computer Interaction </a>
-                            <br> w/ <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>
-                            <br> Summary: 14 out of 15 students recommend/ strongly recommend as TA 
-                                <br> Sample quote: "<i>Strong enthusiasm, solid knowledge of the subject </i>"
-                                <br><a target="_blank" href="teaching/216S_Pandey_Vineet_Student_ASE_Evaluation_-_CSE_216_-_Human-Computer_Interaction_[B00]_(Klemmer_Scott_R)_-_FA14.pdf">Full Student review</a>
-                                <br><br>
-                                </li>
-
-                            <li> Winter 2014: <a target="_blank" href="http://d.ucsd.edu/class/intro-hci/2015/"> CSE 170/ COGS 120: IntroHCI Introduction to Human-Computer Interaction </a>
-                            <br> w/ <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>
-                            <br> Summary: 18 out of 21 students recommend/ strongly recommend as TA 
-                                <br> Sample quote: "<i> Understands the material and teaches well. I felt like his advice regarding the class could be trusted.</i>"
-                                <br><a target="_blank" href="teaching/170S_Pandey_Vineet_Student_ASE_Evaluation_-_CSE_170_-_Introduction_to_HCI_Design_[A00]_(Klemmer_Scott_R)_-_WI15.pdf">Full Student review</a>
-                                <br><br>
-                                </li>
-
-
-                            <li> Spring 2014: <a target="_blank" href="http://cseweb.ucsd.edu/classes/sp15/cse151-a/"> CSE 150 IntroAI </a> 
-                                <br> w/ <a target="_blank" href="http://cseweb.ucsd.edu/~kamalika/">Kamalika Chaudhuri</a>
-                                <br> Summary: Only 3 out of 10 students woult recommend me as TA
-                                <br> Sample quote: "1) <i>Teaches what is applicable to real life work. 2) He doesn't give enough feedback that could help us finish the HW.</i>"
-                                <br> My understanding: The report shows an even split between students who wanted me to discuss how ML techniques could be applied to real-world problems and others who wanted me to solve more problems in discussion sections
-                                <br><a target="_blank" href="teaching/151S_Pandey_Vineet_Student_ASE_Evaluation_-_CSE_151_-_Intro_to_A.I._Stats_Approach_[A00]_(Chaudhuri_Kamalika)_-_SP15.pdf">Full Student review</a>
-                                <br><br>
-                                </li>
-
+                            <li> Fall 2014: <a target="_blank" href="http://d.ucsd.edu/class/grad-IxD/2014/"> CSE 216/ COGS 230: Graduate Human-Computer Interaction </a> w/ <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>
+                                <br> </li>
+                            <li> Winter 2014: <a target="_blank" href="http://d.ucsd.edu/class/intro-hci/2015/"> CSE 170/ COGS 120: IntroHCI Introduction to Human-Computer Interaction </a> w/ <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>
                                 <!--
                                 <br> I led two studio sessions with a total of 33 students. Through the quarter, they built an app from scratch and we exhanged comments in the studio section. I was thrilled to see the final apps for all of them, which will be added below soon.-->
-
+                            </li>
                         </ul>
                     </p>
-                
+                </a>
                 <!--</div>-->
              <a name="work-education">   
                         <h2>Work Experience</h2>
@@ -573,7 +515,7 @@ function switch_tabs(obj) {
                     <br/>
                     <p>I am currently leading the <a target="_blank" href="http://aigs.ucsd.edu">Association of Indian Graduate Students</a> at the university towards organizing events for incoming students and the Indian and university community at large. We barely meet our expenses. Want to <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=nLFEuvcP72kjjiDJAnbqUvPN-17y01VJqX9iQ8NO4sySmGkUwtTYBYcETdS&dispatch=5885d80a13c0db1f8e263663d3faee8d99e4111b56ef0eae45e68b8988f5b2dd" target=_blank> help?</a> </p>
 
-                    <p>I also help organize <a href="http://art.bits-csa.org/" target=_blank ">Annual Alumni Research Talks </a> and <a href="http://aecs.bits-csa.org " target=_blank">Annual Alumni Award for Excellence in Computer Science </a> (defunct now) at BITS Pilani. </p>
+                    <p>I also help organize <a href="http://art.bits-csa.org/" target=_blank ">Annual Alumni Research Talks </a> and the now defunct <a href="http://aecs.bits-csa.org " target=_blank">Annual Alumni Award for Excellence in Computer Science </a> at BITS Pilani. </p>
 
                             <h2>Non-CS Publications</h2>
                                         <p>
@@ -607,7 +549,6 @@ function switch_tabs(obj) {
                 -->
             </div>
             <div id="bottom">
-
             </div>
         </div>
         <div id="footer">
@@ -621,11 +562,9 @@ function switch_tabs(obj) {
 	Thanks.	
 -->
                 <p>देखो मगर प्यार से </p>
-
             </div>
             <div id="footerright">
-            <p align ="left"> My attitude in life is that, unless you’re directly helping to end war, poverty, and homelessness at the same time, you don’t have the right to be ultra-serious. - <a target="_blank" href="http://mickens.seas.harvard.edu/">Sir James Mickens</a> </p>
-            <p> <a href="http://preview.justfreetemplates.com/2011/06/template_2677/index.html" target="_blank">thebluecompany</a> Designed by Manjeet Singh Sawhney - <a href="http://www.manjeetss.com">www.manjeetss.com</a></p>
+                <p> <a href="http://preview.justfreetemplates.com/2011/06/template_2677/index.html" target="_blank">thebluecompany</a> Designed by Manjeet Singh Sawhney - <a href="http://www.manjeetss.com">www.manjeetss.com</a></p>
             </div>
         </div>
     </div>
