@@ -1,0 +1,804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--<!DOCTYPE html>
+<html lang="en">
+-->
+
+<head>
+    <script src="css/jquery.js"></script>
+    <!--<script src="../js/bootstrap.min.js"></script>-->
+    <script>
+    $(function() {
+        $("#includedContent").load("b.html");
+    });
+    </script>
+    <!--<script language="javascript" type="text/javascript" src="http://www.onbile.com/redirection/onujn3h8i9lyvflpk3k1pazpfrkvaxgo0wh6l1d0mpw0nju2e3"></script>
+-->
+    <!---<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="description of page" />
+    <meta name="keywords" content="keywords of site" />
+    <meta name="author" content="name of author - Manjeet Singh Sawhney   www.manjeetss.com" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
+
+    <!--<link href="css/hci.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+-->
+    <title>Vineet Pandey - Homepage</title>
+</head>
+<script>
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-61021045-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script>
+$(document).ready(function() {
+
+    $('ul.tabs a').click(function() {
+        switch_tabs($(this));
+    });
+
+    switch_tabs($('.defaulttab'));
+
+    var $studio6 = [{
+        "name": "Cahoots",
+        "link": "#",
+        "photo": "cahoots.jpg",
+        "title": "Ho-Wei Kang, Karen Kim, Ashley M. Perez"
+    }];
+
+    console.log($studio6.length);
+
+    console.log("here");
+    for (var i = 0; i < $studio6.length; ++i) {
+
+        var $judge = $("<div>", {
+            id: "studio6_team_" + i,
+            class: "col-lg-4 portfolio-item",
+            style: "min-height: 380px;"
+        });
+        console.log($judge);
+        var $photo = $("<img>", {
+            class: "img-responsive",
+            alt: $studio6[i].name,
+            src: "images/intro-hci/" + $studio6[i].photo
+        });
+        console.log($photo);
+        $("#studio6").append($judge);
+        $("#studio6_team_" + i).append($photo);
+        $("#studio6_team_" + i).append("<h3>" + $studio6[i].name + "</h3><p>" + $studio6[i].title + "</p>");
+        $("#studio6_team_" + i).append("<a href='" + $studio6[i].link + "'>" + "link</a>");
+    }
+
+});
+
+function switch_tabs(obj) {
+    $('.tab-content').hide();
+    $('.tabs a').removeClass("selected");
+    var id = obj.attr("rel");
+
+    $('#' + id).show();
+    obj.addClass("selected");
+}
+</script>
+
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div id="navleft">
+                <h1><a href="index.html">Vineet Pandey</a></h1>
+            </div>
+            <div id="navright">
+                <ul>
+                    <li><a class="active">vipandey~at~ucsd~dot~edu</a></li>
+                    <li><a class="active" href="http://www.youtube.com/watch?v=oYWxEl23f8Y" target="_blank">Saying my name!</a> </li>
+                    <li><a href="#contact">Contact?</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--
+	<p> <b>If you are an undergraduate student from BITS Pilani, then you should know about <a href="http://bits-csa.org/AECS.php" target=_blank"><font color="red">Alumni Award for Excellence in Computer Science</font></a> (for the lack of a better name). Last date to apply is October 20th.</b> </p>
+-->
+        <div id="main" align="justify">
+            <div id="mainleft">
+                <center>
+                    <p> Updated (kind of): Apr 25, 2018
+                        <!--<br>
+                        <em><font size=3pt>one of these days..</font></em>-->
+                    </p>
+                    <p>
+                        <img alt="Vineet Mugshot" src="images/mugshot_Vineet_Pandey.jpg" height="200" align="center">                        
+                            <br>
+                            <br>
+                            <a href="https://github.com/vineetp13/" target="_blank"><img height="20" src="images/github.png" alt="github icon">&nbsp;</a>
+                            <a href="http://www.linkedin.com/in/pandeyvineet" target="_blank"><img height="20" src="images/linkedin.ico" alt="linkedin icon">&nbsp;</a>
+                            <a href="https://twitter.com/vineet1pandey" target="_blank"><img height="20" src="images/twitter.png" alt="twitter icon">&nbsp;</a>
+                            <a href="https://medium.com/@vipandey/" target="_blank"><img height="20" src="images/medium.png" alt="medium icon" align="top">&nbsp;</a>
+                </center>
+                </p>
+
+                <!--
+	<p><img src="images/mugshot_Vineet_Pandey.jpg" height="200" onmouseover="this.src='images/doge.jpg'" onmouseout="this.src='images/mugshot_Vineet_Pandey.jpg'"></p>
+-->
+                <h2>Affiliations</h2>
+                <div class="leftmenu"><a target="_blank" href="http://designlab.ucsd.edu">Design Lab</a></div>
+                <div class="leftmenu"><a target="_blank" href="http://cse.ucsd.edu">CSE, UC San Diego</a></div>
+
+                <h2>Summers</h2>
+                <div class="leftmenu"><a target="_blank" href="http://designlab.ucsd.edu"><font color="red">2019: ...</font></a></div>
+                <div class="leftmenu"><a target="_blank" href="http://designlab.ucsd.edu">2018: Staying at lab</a></div>
+                <div class="leftmenu"><a target="_blank" href="http://designlab.ucsd.edu">2017: Staying at lab</a></div>
+                <div class="leftmenu"><a target="_blank" href="http://designlab.ucsd.edu">2016: Staying at lab</a></div>
+                <div class="leftmenu"><a target="_blank" href="http://pub.ist.ac.at/~kchatterjee/">2015: Visiting student <br> at IST Austria</a></div>
+                <div class="leftmenu"><a target="_blank" href="http://research.microsoft.com/en-us/projects/cipherbase/">2014: Intern, Cipherbase team at MSR Redmond</a></div>
+
+                <h2>Past Affiliations</h2>
+                <div class="leftmenu"><a target="_blank" href="http://www.netapp.com/company/research">NetApp Research</a></div>
+                <div class="leftmenu"><a target="_blank" href="http://www.bits-pilani.ac.in">BITS Pilani</a></div>
+
+                <h2>News</h2>
+                <p><b>2016</b></p>
+                <p>May 09 - May 12: Let's meet at <a target="_blank" href="http://chi2016.acm.org">
+                    CHI 2016 </a> in San Jose!</p>     
+                <p>May 06 - May 08: Coming to <a target="_blank" href="https://hci4dacrossborders.wordpress.com/"> Development Consortium/ HCI Across Borders Workshop </a> in San Jose?</p> 
+                <p>Apr 01: <a target="_blank" href="publications/2016-CHI-Workshop-Education_across_borders-Technology_supported_mentoring_and_teambuilding.pdf">Read the final copy </a> of my naive collaboration call for Education across Borders at <i><a target="_blank" href="https://hci4dacrossborders.wordpress.com/">HCI Across Borders</a></i> workshop at CHI 2016 </p>
+                <p>Mar 30: Done with courses and <a target="_blank" href="http://www.cse.ucsd.edu/node/216"> CSE Research Exam</a> requirement for an intermediate Masters</p>
+                <p>Mar 15: <a target="_blank" href="talks/Scaling-learner-feedback-in-MOOCs.html">Flip through my slides</a> on Scaling Learner feedback in MOOCs. 
+                    <br>Summary: Automated tools in isolation don't work, seed with instructor wisdom </p>    
+                
+                <p>Feb 29 - Mar 02: Presenting Darwin poster at<a target="_blank" href="https://cscw.acm.org/2016"> CSCW 2016</a> in San Francisco</p>    
+
+                
+                <p>Feb 07: Check out our<a target="_blank" href="http://d.ucsd.edu/framingFeedback/"> webpage for the CHI paper</a>, created by our undergrad super-RA <a target="_blank" href="http://rachelwchen.github.io/">Rachel</a> </p>    
+
+                <p>Jan 15: Submitted proposal for <i><a target="_blank" href="https://hci4dacrossborders.wordpress.com/">HCI Across Borders</a></i> workshop at CHI 2016. Topic: Education across borders. (edit: Accepted)</p>
+                <p>Jan 10: "<i>Why do sysadmins make config errors that cost millions to your company!?</i>". Read our <a target="_blank" href="http://arxiv.org/abs/1601.01747">ArXiv paper</a> about HCI view of configuration problems (w/ <a target="_blank" href="http://cseweb.ucsd.edu/~tixu/">Tianyin Xu</a>) </a> </p>
+                <p>Jan 10: Website update. &lt;howls of joy> </a> </p>
+
+                <p>Jan 04: Winter term begins. Plans: Research + one class + exploring SD more</a> </p>
+                <p>Jan 02: Happy New Year yall! Another year of opportunities.. </p>
+
+                <p><b>2015</b></p>
+
+                <p>Dec 15: CHI paper accepted! "Framing Feedback: Choosing Review Environment Features that Support High Quality Peer Assessment", w/ <a target="_blank" href="http://pages.ucsd.edu/~cmhicks/">Catherine Hicks</a> and <a target="_blank" href="http://cseweb.ucsd.edu/~cafraser/">Ailie Fraser</a></p>
+
+                <p> Nov 20: Paper submitted to <a target="_blank" href="http://sigmod2016.org/">SIGMOD 2016</a>. (edit: Rejected)
+                </p>
+
+                <p> Nov 07: Work-in-progress submitted to <a target="_blank" href="http://cscw.acm.org/2016/index.php">CSCW 2016</a>. <br>
+                    (edit: Accepted)
+                </p>
+
+                <p> Oct 31: Paper submitted to <a target="_blank" href="http://learningatscale.acm.org/las2016/">Learning@Scale2016</a>. <br> (edit: Rejected)
+                </p>
+
+                <p> Sep 26: Paper submitted to <a target="_blank" href="chi2016.acm.org">CHI 2016</a>. <br> (edit: Accepted)
+                </p>
+
+                <p> <font color = "blue"> Beautiful Vienna summer </font>. <a target="_blank" href="https://twitter.com/vineet1pandey/status/647511293323276288">Pic</a> </p>
+
+                <p> Sep 26: End of summer at IST Austria and Vienna. Back to SD.
+                </p>
+
+                <p> July 13: Beginning internship at IST Austria, Vienna. Working w/ <a target="_blank" href="http://pub.ist.ac.at/~kchatterjee/">Krish</a>: to build tools <br> (1) to incentivize students in online classes, and <br> (2) to help them write proofs
+                </p>
+
+                <p>May 27: <a target="_blank" href="http://www.jnd.org/books/design-of-everyday-things-revised.html"> Design of Everyday Things </a> as a class! Excited to TA DSGN 1 in Fall 2015 for <a target="_blank" href="http://www.jnd.org/"> Don Norman</a> + <a target="_blank" href="http://hci.ucsd.edu/hollan/"> Jim Hollan</a> w/ <a target="_blank" href="http://yasminekotturi.com/"> Yasmine</a> <br></p>
+                <p>May 27: Let's meet in Vienna! <br>
+                    Spending summer at IST Austria developing techniques + tools to help students generate proofs in online classes </p>
+                <p>May 23: Phew! Submitted CSCW Paper w/ <a target="_blank" href="http://pages.ucsd.edu/~cmhicks">Catherine Hicks</a><br> (edit: Rejected)</p> 
+                <p>May 20: <a href="https://twitter.com/vineet1pandey" target="_blank"> Tweet Tweet Chirp </a> </p>
+                
+                <p>Apr 09: Our work on Talkabout+ is featured on Jacobs' School of Engineering <a target="_blank" href="http://jacobsschoolofengineering.blogspot.com/2015/04/meet-engineers-of-tomorrow-vineet.html">blog</a>! Also, camera puts on 37 pounds </p>
+                <p>Mar 30: Spring quarter begins. TA for Professor Kamalika's class IntroAI: Statistical Approach </p>
+                <p>Mar 20: Throwback to systems days: <a target="_blank" href="http://www.uspto.gov/web/patents/patog/week52/OG/html/1409-5/US08924425-20141230.html">Patent</a> granted from NetApp work on creating large-scale data archival product.
+                    <p>Mar 20: Winter quarter is over. Courses (Machine Learning and Database Systems) + Teaching (IntroHCI) + some research.</p>
+                    <p>Jan 28: Work-in-Progress about understanding participant motivations in online discussion groups accepted at <a target="_blank" href="http://learningatscale.acm.org/las2015/"> Learning@Scale 2015!</a> </p>
+                    <p>Jan 5: TAing Scott's <a target="_blank" href="http://d.ucsd.edu/class/intro-hci/2015/">Intro HCI Design course </a>in Winter 2015 </p>
+                    <p><b>2014</b></p>
+                    <p>Dec 20: Fall quarter is over. Course (Principles of Artificial Intelligence) + Teaching (GradHCI). Off to camping in NorCal. </p>
+                    <p>Nov 07: Gave a database seminar on outsourced integrity checks work from summer </p>
+                    <p>Sep 25: TAing Scott's <a target="_blank" href="http://d.ucsd.edu/class/grad-hci/2014/">Graduate Human-Computer Interaction Course </a> in Fall 2014</p>
+                    <p>Sep 25: Doubling up as Co-president for <a target="_blank" href="http://aigs.ucsd.edu/">Association of Indian Graduate Students at UCSD</a>.</p>
+                    <!---<p>Sep 13: Birthday(!) spent figuring out the workings of new lab.</p> -->
+                    <p>Sep 10: Back at university after an amazing internship at Microsoft Research on <a target="_blank" href="http://research.microsoft.com/en-us/projects/cipherbase/">security issues in cloud databases</a>. Paper under preparation.</p>
+                    <p><b><font color="blue">Beautiful</font> <font color="green">summer</font> in <font color="orange">Seattle!</font></b></p>
+                    <p>Jun 16: Spring quarter is over. Courses (Cryptography and Distributed Systems) + Research
+                        <p>
+                            <p>Mar 31: Summer update - I will be interning at Microsoft Research, Redmond. </p>
+                            <p>Mar 21: Winter quarter is over. Courses (Algorithms and Operating Systems) + Research.</p>
+                            <p><b>2013</b></p>
+                            <p>Dec 18: Fall quarter is over. Classes (Computer Architecture, Human-Computer Interaction) + Research.</p>
+                            <p>Nov 05: Acceptance news: Integer representations work (undergraduate thesis) accepted in Journal of Discrete Algorithms, a year after submission. Tired yay!</p>
+                            <p>Oct 03: Fall quarter begins. Checking the scene! </p>
+                            <p>Seminars: Architecture, Design at Large, and Faculty Research</p>
+                            <h2><a name="contact">Contact</a></h2>
+                            <p><b>Lab: 1601, after elevator <br>
+				Calit2 building</b>
+                                <br> Also called:
+                                <br> 1. Qualcomm Institue
+                                <br> 2. Atkinson Hall
+                                <br> 3. Whatever it is called today
+                                <br> Right opposite CSE building
+                                <br>
+                                <a target="_blank" href="https://www.google.com/maps/search/CSE,+San+Diego,+CA/@32.8809305,-117.233768,17z/data=!3m1!4b1"> Map link </a>
+                                <br>
+                                <br> Mailing address:
+                                <br> UC San Diego, Computer Science and Engg <br>
+                                9500 Gilman Drive MC0404 <br>
+                                La Jolla, CA - 92093-0404 <br>
+                                USA
+                                <br>
+                            </p>
+            </div>
+            <div id="mainright">
+                <!--- <div id="includedContent"></div> -->
+                <!---TODO: Enable tabs after fixing looks for Teaching and Coures pages>
+                <p>
+                    <ul class="tabs">
+                        <li><a href="#" class="defaulttab" rel="tabs1">Research</a></li>
+                        <li><a href="#publications" rel="tabs2">Publications</a></li>
+                        <li><a href="#teaching" rel="tabs2">Teaching</a></li>
+                        <li><a href="#coursework" rel="tabs3">Coursework</a></li>
+                        <li><a href="#Service" rel="tabs4">Service</a></li>
+                        <li><a href="#travel" rel="tabs5">Travel</a></li>
+                    </ul>
+                </p>
+                <div class="tab-content" id="tabs1"> 
+
+                    <!---Tab #1 content-->
+                    <!----
+                    <p><font color = "red">Update: Jan 9, 2016: </font> My website is terribly out of date (by 7 months!). For recent updates about projects and publications, please check out my resume <a target="_blank" href="Vineet_Pandey-UC_San_Diego.pdf">here</a>.</p>
+
+                    <hr>
+                -->
+                <p>
+                    <ul class="tabs">
+                        <!--<li><a href="#" class="defaulttab" rel="tabs1"><u>Research</u></a></li>-->
+                        <li><a href="#publications" rel="tabs2"><u>Publications</u></a></li>
+                        <li><a href="#research" rel="tabs2"><u>Research</u></a></li>
+                        <li><a href="#talks-posters" rel="tabs2"><u>Talks</u></a></li>                        
+                        <li><a href="#posters" rel="tabs2"><u>Posters</u></a></li>
+                        <li><a href="#projects" rel="tabs2"><u>Students</u></a></li>
+                        <li><a href="#students" rel="tabs2"><u>Projects</u></a></li>
+                        <li><a href="#teaching" rel="tabs2"><u>Teaching</u></a></li>
+                        <li><a href="#courses" rel="tabs3"><u>Courses</u></a></li>
+                        <li><a href="#work-education" rel="tabs2"><u>Work+Education</u></a></li>
+                        <li><a href="#travel" rel="tabs2"><u>Travel</u></a></li>
+                        <li><a href="#more" rel="tabs3"><u>More..</u></a></li>
+                        <li><a href="#bio" rel="tabs3"><u>Bio</u></a></li>
+                        <!--<li><a href="#Service" rel="tabs4">Service</a></li>-->
+                        <!--<li><a href="#travel" rel="tabs5"><u>Travel</u></a></li>-->
+                    </ul>
+                </p>
+
+                    <p>I am a
+                        <s>first</s> <s>second</s> <s>third</s> <s>fourth </s> <b>fifth</b> year graduate student in Computer Science at UC&nbsp;San&nbsp;Diego. I work with <a target="_blank" href="http://d.ucsd.edu/srk/">Professor Scott Klemmer</a> at <a target="_blank" href="http://designlab.ucsd.edu">Design Lab</a>. </p>
+
+                    <p>I develop techniques that enable people to perform personally-meaningful scientific work using online learning and training material. My research aims to teach anyone to perform science and then create novel knowledge using the scale and diversity of people on the internet. I hope this will make us discuss why our education and research institutions are so insular, especially in the age of internet, and provide some ideas about how we might move ahead. The knowledge of science impacts a diverse planet; in the future, this diverse community may importantly contribute to it. </p>
+                    
+                    <p> If you are curious about such <i>scientific social computing systems</i> research, try these:
+                    <ol>
+                        <li> For an overview, skim through my thesis proposal slides (<a target="_blank" href="http://vineetp13.github.io/stash/Thesis-Proposal-Vineet-June-14-2017.pdf">Creating Scientific Theories with Online Learners</a>) or watch the actual proposal video on <a target="_blank" href="https://www.youtube.com/watch?v=re_yFAJiD0Q">YouTube </a>   
+                        <li> For a more hands-on experience, try <i>Gut Instinct</i> (<a target="_blank" href="http://gutinstinct.ucsd.edu/info">info</a>, <a target="_blank" href="http://gutinstinct.ucsd.edu">login</a>) -- a scientific social computing system -- to learn and uncover secrets about the gut microbiome. This work is in collaboration with the super-amazing folks at <a target="_blank" href="http://americangut.org">American Gut Project</a> and <a target="_blank" href="http://knightlab.ucsd.edu">Knight Lab</a>, led by <a target="_blank" href="https://www.ted.com/speakers/rob_knight">Professor Rob Knight</a> at UC San Diego. Gut Instinct has 950 participants as of Oct 7, 2017. Join <a target="_blank" href="http://gutinstinct.ucsd.edu">now</a>!
+                        <li> Looking for a more academic take? Try <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=7dh3NnUAAAAJ&view_op=list_works&sortby=pubdate">publications</a> on Google Scholar
+                        <li> Just mail me -- vipandey(a)ucsd.edu -- if you have questions and we'll find a slot to chat... 
+                    </ol> 
+                </p>
+
+                    
+
+                    <p>I don't update my website all that frequently; <br>Here's my resume (<font color="red">Sep 2017</font>): <a target="_blank" href="Vineet_Pandey-UC_San_Diego.pdf" src="images/pdf-file-128.png"> <img height="16" src="images/pdf-file-128.png" alt="pdf icon"> </a></p>
+<!--
+                <p>
+                    In 2016 Spring (April-June), I am working on my research to answer how online students can do useful scientific work. From May 6-12, I'll attend <a target="_blank" href="https://hci4dacrossborders.wordpress.com/"> HCI Across Borders</a> workshop and  <a target="_blank" href="https://chi2016.acm.org/"> CHI 2016</a>.
+                </p>
+-->
+                <h2>Research Experience</h2>
+
+
+                    <p>I design ways to make online education more useful for students, instructors, and researchers.</p>
+
+                    <p> Currently, I am developing tools to allow online students to perform useful scientific work as part of online learning. Here's our <a target="_blank" href="publications/2017-CHI-GutInstinct-Creating_scientific_theories_with_online_learners.pdf">CHI 2017 paper </a> about how learners can create theories about human microbiome using online learning materials. </p>
+
+                    <p>In my exploratory projects and prototypes, I draw ideas/ techniques from disparate areas like Machine Learning (e.g.: classifying assignment submissions), Crowdsourcing (e.g.: how can online learners do non-trivial work), Programming Languages (e.g.: using program synthesis to provide feedback), Decision theory (to incentivize student participation) and Learning psychology.</p>
+
+                    <!---- 
+                    <p>
+                    My recent work includes:
+                    <ul> 
+
+                        <iframe src="https://docs.google.com/presentation/d/1SIWtrK6bfbBk_0-txOy9eVsTOqzaV72bsuL2p-ufcIc/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> 
+
+                        <li> Synthesis of current techniques to provide feedback on creative open-ended work in MOOCs. Summary: Automated tools scale instructor knowledge. Slides <a target="_blank" href="https://docs.google.com/presentation/d/1SIWtrK6bfbBk_0-txOy9eVsTOqzaV72bsuL2p-ufcIc/edit#slide=id.g128f206335_0_6">here</a></li>
+                        
+
+                        <li> Understanding the effect of review environemnt in peer review quality (<a target="_blank" href="publications/CHI2016-FramingFeedback-camera-ready.pdf">CHI 2016 paper</a>, w/ <a target="_blank" href="http://pages.ucsd.edu/~cmhicks/">Catherine Hicks</a> and <a target="_blank" href="http://cseweb.ucsd.edu/~cafraser/">Ailie Fraser</a>) 
+
+                        Project webpage: <a target="_blank" href="http://d.ucsd.edu/framingFeedback/"><b>Framing Feedback </a> </b>
+                        
+                        </li>
+
+                        <li> Finding ways to incentivize peer interactions in online classes using game theory (<a target="_blank" href="publications/CSCW2016-WiP-Darwin-GameTheory_for_PeerAssessment.pdf">CSCW 2016 Work-in-progress</a>, w/ <a target="_blank" href="http://pub.ist.ac.at/~kchatterjee/">Krish) </a> </li>  
+                
+                        <li> Structuring video discussions online for better student learning (<a target="_blank" href="publications/LAS2015-WiP-StoryPedagogy.pdf">Learning@Scale 2015 Work-in-progress</a>, w/ <a target="_blank" href="http://yasminekotturi.com/"> Yasmine Kotturi</a> and <a target="_blank" href="https://web.stanford.edu/~chinmay/"> Chinmay Kulkarni</a>) </li>
+                    </ul>
+                        </p> 
+                        -->
+                    
+                    <p> Previously, I have built systems and created data structures for a range of problems including efficient integrity checks for databases (SIGMOD 2017), quick failover in a clustered operating system (NetApp internal report), quick arithmetic operations w/ novel integer representations (<a target="_blank" href="publications/2014-JDA-paper-IntegerRepresentations.pdf">Journal of Discrete Algorithms 2014</a>, <a target="_blank" href="publications/2011-TAMC-paper-IntegerRepresentations.pdf">TAMC 2011</a>) and efficient database indexing for flash memory (<a target="_blank" href="publications/KIISE2012-journal-indexingstructures.pdf">Journal in Korea</a> - fun times!).
+                    </p>
+                    <!--<hr align=center width=20%>
+                    <br/>-->
+
+                    <!---
+                    <p>During Summer 2014, I developed data structures for efficient integrity checks on outsourced databases with my mentor <a target="_blank" href="http://research.microsoft.com/en-us/people/arvinda"> Arvind Arasu </a> at Microsoft Research Redmond. </p>
+                -->
+
+                <!--
+                    <h2>Research Interests</h2>
+                    <p> 
+                       <ul>
+                        <li>Techqniues for online education <ul>
+                            <li>Assessment using automated, peer and instructor feedback; </li>
+                            <li>Interface design to meet specific learning objectives (e.g.: writing proofs)<br> </li>
+                            <li>Game theory and mechanism design<br></li>
+                        </ul></li>
+                    </ul> </p>
+                    
+                    <p>
+                        Previously worked on security in databases and storage, operating systems, data structures, new memory technologies, network coding. </p>
+-->
+
+<div id="publications">
+                    <h2>Publications</h2>
+                    <p><b><font color="#000">Graduate school</font></b>
+                        <br>
+                    </p>
+                    <ul>
+                    <li>
+                     <p>
+                        Under submission at CHI 2018
+                    </p> </li>
+
+                    <li>
+                     <p>
+                        Gut Instinct: Creating Scientific Theories with Online Learners. Vineet Pandey, <a target="_blank" href="https://knightlab.ucsd.edu/wordpress/?page_id=47">Amnon Amir,
+Justine Debelius, Embriette Hyde, Tomasz Kosciolek, Rob Knight</a>, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>.<a target="_blank" href="https://chi2017.acm.org/"> CHI 2017</a>, Denver, CO, May 2017. <br>
+                        <a target="_blank" href="publications/CHI2017-GutInstinct-Creating_scientific_theories_with_online_learners.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
+                    </p> </li>
+
+                     <li>
+                     <p>
+                        Framing Feedback: Choosing Review Environment Features that Support High Quality Peer Assessment. <a target="_blank" href="http://pages.ucsd.edu/~cmhicks">Catherine M. Hicks</a>, Vineet Pandey, <a target="_blank" href="http://cseweb.ucsd.edu/~cafraser/">C. Ailie Fraser</a>, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>.<a target="_blank" href="https://chi2016.acm.org/"> CHI 2016</a>, San Jose, CA, May 2016. <br>
+                        <a target="_blank" href="publications/2016-CHI-FramingFeedback-camera-ready.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
+                    </p> </li>
+
+                                        <li>
+                    <p>Concerto: A High Concurrency Key-Value Store with Integrity. <a target="_blank" href="https://www.microsoft.com/en-us/research/group/database/">Arvind Arasu, Ken Eguro, Raghav Kaushik, Donald Kossmann, Pingfan Meng, Vineet Pandey, Ravi Ramamurthy.</a> SIGMOD 2017. <a target="_blank" href="publications/2017-SIGMOD-Concerto-A High Concurrency Key-Value Store with Integrity.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
+
+                        
+                    </p>
+                </li>
+
+<b>Work-in-Progress, Workshops etc.</b>
+                        <li>
+                     <p>
+                        [Workshop] Education across borders: Technology supported mentoring and teambuilding. Vineet Pandey.<a target="_blank" href="https://hci4dacrossborders.wordpress.com/"> HCI Across Borders</a> workshop at <a target="_blank" href="https://chi2016.acm.org/"> CHI 2016</a>, San Jose, CA, May 2016. <br>
+                        <a target="_blank" href="publications/2016-CHI-Workshop-Education_across_borders-Technology_supported_mentoring_and_teambuilding.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
+                    </p> </li>
+
+
+
+                    <li>
+                    <p>
+                        Game-theoretic models identify useful principles for peer collaboration in online learning platforms. Vineet Pandey, <a target="_blank" href="http://pub.ist.ac.at/~kchatterjee/">Krishnendu Chatterjee</a>. Work-in-Progress at <a target="_blank" href="http://learningatscale.acm.org/las2015/"> CSCW 2016</a>, San Francisco, CA, March 2016.<br>
+                        <a target="_blank" href="publications/2016-CSCW-WiP-Darwin-GameTheory_for_PeerAssessment.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
+                        <a target="_blank" href="publications/2016-CSCW-WiP-Darwin-GameTheory_for_PeerAssessment-poster.pdf"><img height="32" src="images/poster_icon.png" alt="poster icon"></a>
+                    </p>
+                    </li>
+
+                    <li>
+                    <p>
+                        Connecting stories and pedagogy increases participant engagement in discussions. Vineet Pandey, <a target="_blank" href="http://yasminekotturi.com/">Yasmine Kotturi</a>, <a target="_blank" href="https://web.stanford.edu/~chinmay/">Chinmay Kulkarni, <a target="_blank" href="http://hci.stanford.edu/msb/">Michael Bernstein, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer. Work-in-Progress at <a target="_blank" href="http://learningatscale.acm.org/las2015/"> Learning@Scale 2015</a>, Vancouver, BC, March 2015. <br>
+                        <a target="_blank" href="publications/2015-LAS-WiP-StoryPedagogy.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
+                        <a target="_blank" href="posters/2015-LAS-poster-StoryPedagogy.pdf"><img height="32" src="images/poster_icon.png" alt="poster icon"></a>
+                    </p>
+                    </li>
+
+                    <li>
+                    <p>
+                        Technical Report - An HCI View of Configuration Problems. <a target="_blank" href="http://cseweb.ucsd.edu/~tixu/">Tianyin Xu</a>, Vineet Pandey, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer. <a target="_blank" href="http://arxiv.org/abs/1601.01747"> arXiv</a>, Jan 2016. <br>
+                        <a target="_blank" href="publications/2016-Technical Report-An_HCI_View_of_Configuration_Problems.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
+                    </p>
+                    </li>
+
+
+
+                </ul>
+                    <p><b><font color="#000">Work at NetApp Research</font></b>
+                        <br>
+                        <p> Two papers in NetApp Technical Journal (NATJ), with project members. NATJ is NetApp's internal journal which intends to communicate and archive important research and development work. My papers described the work towards vaulting across clusters and instantaneous takeover in a clustered setup.
+                        </p>
+                        <p>
+                            <font color="#0000"><b>Undergraduate studies</font></b></p>
+                    <ul>
+                        <li>
+                        <p>
+                            <font color="#000">Integer representations towards efficient counting in the bit probe model.</font>
+                            <a target="_blank" href="http://www.madalgo.au.dk/~gerth/">Gerth Brodal</a>, Mark Greve, Vineet Pandey,
+                            <a target="_blank" href="http://tcs.snu.kr/about/members/ssrao/">S. Srinivasa  Rao</a>. <br>Journal of Discrete Algorithms, 2014.
+                            <a target="_blank" href="publications/JDA2014-paper-IntegerRepresentations.pdf">
+                                <br><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a> <br> TAMC 2011: 8th Annual Conference on Theory and Applications of Models of Computation, Tokyo, May 2011.
+                            <a target="_blank" href="publications/2011-TAMC-paper-IntegerRepresentations.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
+                        </p>
+                        </li>
+
+                        <li>
+                        <p>
+                            <font color="#000">Tree Indexing Structures for Flash Memory.</font>
+                            SeungBum Jo, Vineet Pandey, S. Srinivasa Rao. Student Research Symposium, 18th International Conference on High Performance Computing (HiPC 2011), Bangalore, Dec 2011. <a target="_blank" href="publications/2011-HiPC-symposium-IndexingStructures.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf <p></p>icon"></a></p>
+                        <p> A longer version of the paper was also published in journal of <a target="_blank" href="http://kiise.or.kr/">KIISE</a>. You'll enjoy it more if you can read Korean! </br>
+                            <a target="_blank" href="publications/2012-KIISE-journal-indexingstructures.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
+                        </p>
+                        </li>
+                    </ul>
+
+                        <h2>Patents</h2>
+                        <p>
+                            <font color="#000">System and method for efficiently migrating data from legacy storage systems to newer object based storage systems.</font>
+                            Chhavi Sharma, Parag Deshmukh, Ranjit Kumar and Vineet Pandey. Patent <a target="_blank" href="http://www.uspto.gov/web/patents/patog/week52/OG/html/1409-5/US08924425-20141230.html">granted</a> in 2015.</p>
+
+</div>
+
+             <a name="projects">   
+                        <h2>Projects</h2>
+                        </a>
+                        <p>
+                            <font color="#000">Gut Instinct - Scientific Social Computing Systems</font>
+                            </br> gutinstinct.ucsd.edu
+                            Mar 2016 - now</br>                              
+                            <img alt="Vineet Mugshot" src="images/mugshot_Vineet_Pandey.jpg" height="200" align="center">                          
+                        </p>
+
+                        <p>
+                            <font color="#000">Framing Feedback</font>
+                            </br>
+                            Mar 2016 - now</br>                            
+                        </p>
+
+                        <p>
+                            <font color="#000">Cipherbase</font>
+                            </br>
+                            Mar 2016 - now</br>                            
+                        </p>
+
+             <a name="talks-posters">   
+                        <h2>Talks and Posters and Demos</h2>
+                        </a>
+                        <p>
+                            <font color="#000">Learning@Scale</font>
+                            </br>
+                            June 2018 </br>
+                            London
+                        </p>
+
+                        <p>
+                            <font color="#000">HBS lead-user innovation workshop</font>
+                            </br>
+                            Apr 2018 </br>
+                            Harvard, Boston
+                        </p>
+
+                        <p>
+                            <font color="#000">MIT Teaching Systems Lab</font>
+                            </br>
+                            Apr 2018 </br>
+                            MIT, Boston
+                            <br>vefve
+                        </p>
+
+                        <p>
+                            <font color="#000">Thesis Proposal</font>
+                            </br>
+                            June 2017 </br>
+                            Design Lab, UCSD
+                            <br>vefve
+                        </p>
+
+                        <p>
+                            <font color="#000">CHI 2017</font>
+                            </br>
+                            May 2017 </br>
+                            Colorado
+                            <br>vefve
+                        </p>
+
+                        <p>
+                            <font color="#000">Research Exam</font>
+                            </br>
+                            Apr 2018 </br>
+                            CSE, UCSD
+                            <br>vefve
+                        </p>
+
+                        <h2>Posters</h2>
+                        
+                        <p>
+                            <font color="#000">2018 Research Expo</font>
+                            </br> Orr, Kaung
+                             </br>
+                            UCSD <br>
+                            <img alt="2018 Research Expo poster by Orr and Kaung about Galileo" src="posters/2018-Research_Expo-Kaung_Orr-Galileo.png" height="200" align="center"> 
+                        </p>
+
+                        <p>
+                            <font color="#000">2017 San Diego Maker Faire</font>
+                            </br> Tushar Koul
+                             </br>
+                            Balboa Park  <br>
+                            <img alt="2017 Research Expo poster by Tushar Koul about Gut Instinct and Galileo" src="posters/2017-MakerFaire_SanDiego-Tushar.png" height="200" align="center"> 
+                        </p>
+
+                        <p>
+                            <font color="#000">2017 Research Expo</font>
+                            </br> Chen
+                             </br>
+                            UCSD  <br>
+                            <img alt="2017 Research Expo poster by Chen about Gut Instinct" src="posters/2017-Research_Expo-Chen-Docent.jpg" height="200" align="center"> 
+                        </p>
+
+                        <p>
+                            <font color="#000">2016 CSE Research Expo</font>
+                            </br> Rachel Chen and Crystal Kwok
+                             </br>
+                            CSE  <br>
+                            <img alt="2018 Research Expo poster by Orr and Kaung about Galileo" src="posters/2016-CSE_Research-Crystal_Rachel-Framing_Feedback.png" height="200" align="center"> 
+                        </p>
+
+                        <p>
+                            <font color="#000">2015 Research Expo</font>
+                            </br> yasmine and i
+                             </br>
+                            UCSD  <br>
+                            <img alt="2018 Research Expo poster by Orr and Kaung about Galileo" src="posters/2015-LAS-poster-StoryPedagogy.png" height="200" align="center"> 
+                        </p>
+
+                        <p>
+                            <font color="#000">Aliyah Lab talk</font>
+                            </br> Aliyah
+                             </br>
+                            UCSD design lab  <br>
+                            
+                        </p>
+
+<a name="teaching"> </a>
+                <!--<div class="tab-content" id="tabs2">-->
+                <h2>Teaching Experience</h2>
+                    <p>
+                        <!--Tab #2 content-->
+                        I have been Teaching Assistant for four quarters at the university.
+                        (Number of students below refers to number of students who filled the post-course surveys)
+                        <ul>
+                            <li>Fall 2015: <a target="_blank" href="https://docs.google.com/document/d/1Cz1Uht5ttR_RfIs_6e_wS8Zg7LTzm1A8Fx1ZGNrJ1uQ/edit?ts=560c21ce#">DSGN 1 Introduction to Design </a> <br>
+                                w/ <a target="_blank" href="http://www.jnd.org/"> Don Norman</a> & <a target="_blank" href="http://hci.ucsd.edu/hollan/"> Jim Hollan</a>, w/ <a target="_blank" href="http://yasminekotturi.com/"> Yasmine Kotturi (TA) </a>
+                                <br> Summary: Mean 4+ rating (on a scale of 5) on performance by 13 students 
+                                <br> Sample quote: "<i> ..provides thorough and detailed explanations and alternative examples.</i>"
+                                <br><a target="_blank" href="teaching/DSGN1S_Pandey_Vineet_Fa16.pdf">Full Student review</a>
+                                <br><br>
+
+                            </li>
+
+                            <li> Fall 2014: <a target="_blank" href="http://d.ucsd.edu/class/grad-IxD/2014/"> CSE 216/ COGS 230: Graduate Human-Computer Interaction </a>
+                            <br> w/ <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>
+                            <br> Summary: 14 out of 15 students recommend/ strongly recommend as TA 
+                                <br> Sample quote: "<i>Strong enthusiasm, solid knowledge of the subject </i>"
+                                <br><a target="_blank" href="teaching/216S_Pandey_Vineet_Student_ASE_Evaluation_-_CSE_216_-_Human-Computer_Interaction_[B00]_(Klemmer_Scott_R)_-_FA14.pdf">Full Student review</a>
+                                <br><br>
+                                </li>
+
+                            <li> Winter 2014: <a target="_blank" href="http://d.ucsd.edu/class/intro-hci/2015/"> CSE 170/ COGS 120: IntroHCI Introduction to Human-Computer Interaction </a>
+                            <br> w/ <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>
+                            <br> Summary: 18 out of 21 students recommend/ strongly recommend as TA 
+                                <br> Sample quote: "<i> Understands the material and teaches well. I felt like his advice regarding the class could be trusted.</i>"
+                                <br><a target="_blank" href="teaching/170S_Pandey_Vineet_Student_ASE_Evaluation_-_CSE_170_-_Introduction_to_HCI_Design_[A00]_(Klemmer_Scott_R)_-_WI15.pdf">Full Student review</a>
+                                <br><br>
+                                </li>
+
+
+                            <li> Spring 2014: <a target="_blank" href="http://cseweb.ucsd.edu/classes/sp15/cse151-a/"> CSE 150 IntroAI </a> 
+                                <br> w/ <a target="_blank" href="http://cseweb.ucsd.edu/~kamalika/">Kamalika Chaudhuri</a>
+                                <br> Summary: Only 3 out of 10 students woult recommend me as TA
+                                <br> Sample quote: "1) <i>Teaches what is applicable to real life work. 2) He doesn't give enough feedback that could help us finish the HW.</i>"
+                                <br> My understanding: The report shows an even split between students who wanted me to discuss how ML techniques could be applied to real-world problems and others who wanted me to solve more problems in discussion sections
+                                <br><a target="_blank" href="teaching/151S_Pandey_Vineet_Student_ASE_Evaluation_-_CSE_151_-_Intro_to_A.I._Stats_Approach_[A00]_(Chaudhuri_Kamalika)_-_SP15.pdf">Full Student review</a>
+                                <br><br>
+                                </li>
+
+                                <!--
+                                <br> I led two studio sessions with a total of 33 students. Through the quarter, they built an app from scratch and we exhanged comments in the studio section. I was thrilled to see the final apps for all of them, which will be added below soon.-->
+
+                        </ul>
+                    </p>
+                
+                <!--</div>-->
+             <a name="work-education">   
+                        <h2>Work Experience</h2>
+                        </a>
+                        <p>
+                            <font color="#000">Visiting Student, IST Austria</font>
+                            </br>
+                            July 2015 - Sep 2015 </br>
+                            Evolutionary game-theoretic model for peer feedback in online classes.
+                        </p>
+
+                        <p>
+                            <font color="#000">Summer Intern, Microsoft Research</font>
+                            </br>
+                            June 2014 - Sep 2014 </br>
+                            Data structures for efficient integrity checks on outsourced databases
+                            <br> aka "How I learned to stop worrying and love the cloud for all my database needs". Paper under submission.
+                        </p>
+                            <p>
+                                <font color="#000">Advanced Technology Group, NetApp</font>
+                                </br>
+                                July 2011 - May 2013 </br>
+                                As a Member of Technical Staff, I worked in teams of 2 or 3 engineers to design, implement and measure the performance of prototypes. We worked to scale up the vaulting capabilities in the existing OS code and to reduce the failover time (drastically!) in a cluster with high availability configuration. The ideas and techniques demonstrated were taken up by multiple product teams and led to patent application and internal papers.
+                                <br>
+                                <br> Along with team members, I was selected for Honorable Mention in 'Innovation' and 'Teamwork' categories in semi-annual CTO awards.</p>
+                            <p>
+                                <font color="#000">Undergraduate research</font>
+                                </br>
+                                As an undergraduate, I was lucky to work on diverse research topics with great mentors during research internships.
+                                <br>
+                                <ul>
+                                    <li>Indian Statistical Institute, Kolkata (with <a href="http://www.isical.ac.in/~bimal/" target="_blank">Dr. Bimal Roy</a>)
+                                        <br> Securely locating nearby devices in an connected environment
+                                        <br> Short paper accepted at Symposium at PASSAT 2009 </li>
+                                    <li>Chinese University of Hong Kong (with <a href="http://www.ie.cuhk.edu.hk/people/jaggi.shtml" target="_blank">Prof Sidharth Jaggi</a>)
+                                        <br> Network coding using convolutional codes </li>
+                                    <li>Seoul National University, South Korea
+                                        <br> (Undergraduate thesis, with <a target="_blank" href="http://tcs.snu.kr/about/members/ssrao/">Professor Srinivasa Rao</a>)
+                                        <br> Integer representations in bit probe model and indexing data structures on flash memory
+                                    </li>
+                                    <li> <a href="http://research.microsoft.com/en-us/events/indiasummerschool2010/" target="_blank"> Microsoft Research Summer School on Computing for Socio-Economic Development </a>
+                                        <br> Talks and field activities towards understanding how technology can be used towards solving problems in socio-economic development
+                                        <br>
+                                    </li>
+                                </ul>
+                            </p>
+
+                                <h2>Education</h2>
+                                <p>
+                                    <font color="#000"> University of California, San Diego</font>
+                                    </br>
+                                    Ph.D. Computer Science (2013 - )
+                                    <p>
+                                        <p>
+                                            <font color="#000">BITS Pilani, Pilani Campus</font>
+                                            </br>
+                                            B.E. (Hons.) Computer Science (2011)</p>
+
+                <!--</div>-->
+ 
+             <a name="courses">   
+                        <h2>Coursework</h2>
+                        </a>
+               <!-- <div class="tab-content" id="tabs3"> -->
+                	<ul>
+                        <b>Human-Computer Interaction and Design</b>
+                		<li><a target="_blank" href="http://d.ucsd.edu/class/grad-IxD/2013/">CSE 216</a>: Human-Computer Interaction, w/ <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a> </li>
+                        <li><a target="_blank" href="http://tinyurl.com/COGS260-F15 ">COGS 260</a>: Advanced Seminar in Design, w/ <a target="_blank" href="http://www.jnd.org">Don Norman </a></li>
+
+                	</ul>
+                	<ul>
+
+                		<b>Machine Learning	</b>
+                		<li><a target="_blank" href="http://cseweb.ucsd.edu/classes/fa14/cse250A-a/">CSE 250A</a>: Probabilistic Reason & Learning, w/ <a target="_blank" href="http://http://cseweb.ucsd.edu/~saul/">Lawrence Saul</a> </li>
+                		<li><a target="_blank" href="http://cseweb.ucsd.edu/~dasgupta/250B/index.html">CSE 250B</a>: Learning Algorithms, w/ <a target="_blank" href="http://cseweb.ucsd.edu/~dasgupta/">Sanjoy Dasgupta</a> </li>
+                	</ul>
+                	<ul>
+                		<b>Systems	</b>
+                		<li><a target="_blank" href="http://cseweb.ucsd.edu/classes/wi14/cse221-a/">CSE 221</a>: Operating Systems, w/ <a target="_blank" href="http://cseweb.ucsd.edu/~voelker/">Geoff Voelker</a> </li>
+                		<li><a target="_blank" href="http://cseweb.ucsd.edu/classes/sp14/cse223B-a/">CSE 223B</a>: Distributed Computing & Systems, w/ <a target="_blank" href="http://cseweb.ucsd.edu/~snoeren/">Alex Snoeren</a> </li>                		
+                		<li>CSE 232B: Principles of Database Systems, w/ <a target="_blank" href="http://db.ucsd.edu/People/yannis.htm">Yannis Papakonstantinou</a></li>
+                		<li><a target="_blank" href="http://cseweb.ucsd.edu/classes/fa13/cse240A-a/">CSE 240A:</a> Principles of Computer Architecture, w/ <a target="_blank" href="http://cseweb.ucsd.edu/~tullsen/">Dean Tullsen</a> </li>
+                	</ul>
+
+					<ul> 
+                        <b>Theory+Algorithms</b>
+                		
+                		<li>CSE 202: Algorithm Design & Analysis, w/ <a target="_blank" href="https://cseweb.ucsd.edu/~russell/">Russell Impagliazzo</a> </li>
+                        <li><a target="_blank" href="https://cseweb.ucsd.edu/~mihir/cse207/index.html">CSE 207</a>: Modern Cryptography, w/ <a target="_blank" href="https://cseweb.ucsd.edu/~mihir/">Mihir Bellare</a> </li>
+                	</ul>
+
+                    <ul> 
+                        <b>Others</b>
+                        
+                        <li><a target="_blank" href="http://ucsd-pl.github.io/cse230/">CSE 230</a>: Programming Languages, w/ <a target="_blank" href="https://ranjitjhala.github.io/">Ranjit Jhala</a> </li>
+                    </ul>
+
+                <!--</div>-->
+
+<a name="more">
+                    <h2>More information</h2>
+                    <p>Before beginning graduate school, I worked at <a target="_blank" href="http://www.netapp.com/us/company/leadership/advanced-technology/index.aspx"> NetApp Research/ Advanced Technology Group </a> towards building new storage products using techniques in low-latency networking, security and more. In my first year at UCSD, I worked with <a target="_blank" href="http://cseweb.ucsd.edu/~swanson/">Professor Steven Swanson</a> at the <a target="_blank" href="http://nvsl.ucsd.edu">Non-Volatile Systems Lab</a>. </p>
+                    <p>Even before (phew!), I graduated from BITS Pilani in India with an undergraduate degree in Computer Science. </p>
+                    <hr align=center width=20%>
+                    <br/>
+                    <p>I am currently leading the <a target="_blank" href="http://aigs.ucsd.edu">Association of Indian Graduate Students</a> at the university towards organizing events for incoming students and the Indian and university community at large. We barely meet our expenses. Want to <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=nLFEuvcP72kjjiDJAnbqUvPN-17y01VJqX9iQ8NO4sySmGkUwtTYBYcETdS&dispatch=5885d80a13c0db1f8e263663d3faee8d99e4111b56ef0eae45e68b8988f5b2dd" target=_blank> help?</a> </p>
+
+                    <p>I also help organize <a href="http://art.bits-csa.org/" target=_blank ">Annual Alumni Research Talks </a> and <a href="http://aecs.bits-csa.org " target=_blank">Annual Alumni Award for Excellence in Computer Science </a> (defunct now) at BITS Pilani. </p>
+
+                            <h2>Non-CS Publications</h2>
+                                        <p>
+                                            <font color="#000">Dominant hegemonic voice in Azar Nafisi's Reading Lolita in Tehran.</font>
+                                            Geetha B., Vineet Pandey, Nilanjana Bhattacharya. American Comparative Literature Association Conference at Simon Frazer University, Vancouver, Canada. March 31- April&nbsp;3 2011.
+                                        </p>
+                                        <p> A longer version was also accepted at <a target="_blank" href="http://www.pertanika.upm.edu.my/JSSH.php">Pertanika Journal of Social Sciences and Humanities</a>.</p>
+                                        <p><b><font color="#000">  </font></b>
+                                        </p>
+                                        <h2>The other side</h2>
+                                        <p>
+                                            Traveling, Outdoors, Sports, Reading, Writing.
+                                            <br/>
+                                        </p>
+
+                </a>
+                    
+                    <!---
+                <hr align=center width=10%>
+                <br/>
+                <p>I have inconsistent interests and hobbies (reading non-fiction, writing fiction, puzzles, codez, webcomics, backpacking, soccer, running, comedy, hip-hop, international relations, policy) for which I find limited time now. </p>
+                <p>I am grateful to all the amazing people I've met who've taught me most things I know.</p>
+            -->
+
+                <div class="tab-content" id="tabs4">
+                </div>
+                <!---
+                	<div class="tab-content" id="tabs5"> 
+                	With good fate, I have been to interesting places at interesting times. 
+                	</div>
+                -->
+            </div>
+            <div id="bottom">
+
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footerleft">
+                <!-- 	
+	This website template was created by myself Manjeet Singh Sawhney (http://www.manjeetss.com)
+	You are free to copy, distribute and adapt any of the work under the following condition:
+	You must attribute the work by keeping the "Designed by Manjeet Singh Sawhney" link in the footer.
+	If you wish, you can remove the footer link by paying a small fee of only $5. For this please drop 
+	me an e-mail to manjeetss@gmail.com with your details and I will then send you my PayPal account details. 
+	Thanks.	
+-->
+                <p>देखो मगर प्यार से </p>
+
+            </div>
+            <div id="footerright">
+            <p align ="left"> My attitude in life is that, unless you’re directly helping to end war, poverty, and homelessness at the same time, you don’t have the right to be ultra-serious. - <a target="_blank" href="http://mickens.seas.harvard.edu/">Sir James Mickens</a> </p>
+            <p> <a href="http://preview.justfreetemplates.com/2011/06/template_2677/index.html" target="_blank">thebluecompany</a> Designed by Manjeet Singh Sawhney - <a href="http://www.manjeetss.com">www.manjeetss.com</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

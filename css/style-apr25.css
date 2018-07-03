@@ -1,0 +1,288 @@
+/* 	This website template was created by myself Manjeet Singh Sawhney (http://www.manjeetss.com)
+	You are free to copy, distribute and adapt any of the work under the following condition:
+	You must attribute the work by keeping the "Designed by Manjeet Singh Sawhney" link in the footer.
+	If you wish, you can remove the footer link by paying a small fee of only $5. For this please drop me an e-mail to manjeetss@gmail.com with your details and I will then send you my PayPal account details. Thanks.	
+*/
+
+/* vineetp
+	original color #000 (blue) replaced by #000 (black)
+*/
+
+.img-circle {
+    border-radius: 40%;
+}
+
+.selected {
+    font-weight:bold;
+}
+.tab-content {
+    clear:both;
+    border:0px solid #ddd;
+    padding:10px;
+}
+
+body
+{
+	margin: 0 0 60px 0;
+	padding: 0;
+	background: #fff;
+	font-size: 100%;
+	font-family: Helvetica, Arial, Verdana;
+	color: #666;
+}
+
+img
+{
+	border: 0;
+}
+
+#container
+{
+	margin: 0 auto;
+	width: 800px;
+}
+
+#navbar
+{
+	width: 800px;
+	height: 85px;
+	border-bottom: 1px solid #000000;
+}
+
+#navleft
+{
+	float: left;
+	width: 300px;
+	height: 100px;
+}
+
+#navleft h1
+{
+	margin: 45px 0 0 15px;
+	padding: 0;
+	font-size: 170%;
+	font-weight: normal;
+	/*color: #000;*/
+	color: #000000;	
+}
+
+#navleft a
+{
+	color: #000;
+	text-decoration: none;	
+}
+
+#navright
+{
+	float: left;
+	width: 500px;
+	height: 100px;
+}
+
+#navright ul
+{
+	margin: 55px 15px 0 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: right;
+	color: #ccc;
+}
+
+#navright ul li
+{
+	display: inline;
+	margin: 0 0 0 10px;	
+}
+
+a
+{
+	text-decoration: none;
+	color: #000;	
+}
+
+a:hover
+{
+	color: #2eff29;
+}
+
+#navright ul li a
+{
+	text-decoration: none;
+	color: #999;
+	font-weight: bold;	
+}
+
+#navright ul li a.active
+{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+#navright ul li a:hover
+{	
+	color: #2eff29;
+}
+
+#main
+{
+	width: 1200px;
+	line-height: 160%;
+	padding: 15px 0 0 0;
+	border-bottom: 2px solid #000;
+}
+
+#main p
+{
+	margin: 0 15px 15px 15px;	
+}
+
+#main h2, h3
+{	
+	margin: 0 0 15px 0;
+	padding: 5px 15px;
+	font-size: 120%;
+	font-weight: normal;
+	color: #000;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+#mainright
+{
+	float: left;
+	width: 500px;
+	padding: 0 0px 0 0;	
+}
+
+ul.tabs
+{
+	margin: 0px 15px 0 0;
+	padding: 0 0px 0 0;	
+	list-style-type: none;
+	text-align: right;
+	color: #ccc;
+	width: 485px;
+}
+
+ul.tabs li
+{
+	display: inline;
+	margin: 0 0 0 10px;	
+}
+
+#mainright img.left
+{
+	float: left;
+	border: 1px solid #CDCDCD;
+	padding: 5px;
+	margin: 0 15px 5px 15px;
+}
+
+#mainright img:hover.left
+{
+	border: 1px solid #2eff29;
+}
+
+#mainright img.right
+{
+	float: right;
+	border: 1px solid #cdcdcd;
+	padding: 5px;
+	margin: 0 15px 5px 15px;
+}
+
+#mainright img:hover.right
+{	
+	border: 1px solid #2eff29;
+}
+
+#mainleft
+{
+	float: left;
+	width: 255px;
+	padding: 0 30px 0 15px;
+}
+
+#maincenter
+{
+	float: left;
+	width: 800px;
+	padding: 0 30px 0 15px;
+}
+
+#mainleft .leftmenu
+{
+	text-align: left;
+	margin: 5px 10px 5px 10px;	
+	font-weight: bold;	
+}
+
+#mainleft .leftmenu a
+{
+	display: block;
+	padding: 0px 5px 0px 5px;	
+	color: #000;	
+	text-decoration: none;
+}
+
+#mainleft .leftmenu a:hover 
+{	
+	color: #2eff29;	
+}
+
+#bottom
+{
+	clear: both;
+	width: 1200px;
+}
+
+#footer
+{
+	float: left;
+	width: 1200px;
+	height: 50px;
+	color: #999;
+}
+
+#footer p
+{
+	margin: 0;
+	padding: 15px;
+}
+
+#footer a
+{
+	color: #999;
+	text-decoration: none;
+}
+
+#footer a:hover
+{
+	color: #000;
+	text-decoration: none;
+}
+
+#footerleft
+{
+	float: left;
+	width: 300px;
+	height: 50px;
+}
+
+#footerright
+{
+	float: left;
+	width: 500px;
+	height: 50px;
+	text-align: right;
+}
+
+#footerleft a, #footerright a
+{
+	font-weight: bold;
+}
+
+#footerleft a:hover, #footerright a:hover
+{
+	color: #2eff29;
+}

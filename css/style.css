@@ -8,6 +8,10 @@
 	original color #000 (blue) replaced by #000 (black)
 */
 
+.img-circle {
+    border-radius: 40%;
+}
+
 .selected {
     font-weight:bold;
 }
@@ -19,12 +23,13 @@
 
 body
 {
-	margin: 0 0 60px 0;
+	margin: 0px 0 60px 0;
 	padding: 0;
-	background: #fff;
+	background: #fff;	
 	font-size: 100%;
 	font-family: Helvetica, Arial, Verdana;
 	color: #666;
+	/*background-color: #B6B1A9;*/
 }
 
 img
@@ -35,21 +40,37 @@ img
 #container
 {
 	margin: 0 auto;
-	width: 800px;
+	/*width: 1200px;*/
+	position: relative;	
 }
 
 #navbar
 {
-	width: 800px;
-	height: 85px;
-	border-bottom: 1px solid #000000;
+	/*width: 1200px;
+	height: 85px;*/
+	position: relative;
+	border-bottom: 5px solid #006A96;
+	margin: 0 15px 15px 15px;
 }
 
 #navleft
 {
 	float: left;
-	width: 300px;
-	height: 100px;
+	/*width: 300px;
+	height: 100px;*/
+	position: relative;
+}
+
+#navleft_vin
+{
+	float: left;
+	position: left;
+}
+
+#navright_vin
+{
+	float: left;
+	position: right;
 }
 
 #navleft h1
@@ -71,8 +92,9 @@ img
 #navright
 {
 	float: left;
-	width: 500px;
-	height: 100px;
+	/*width: 500px;
+	height: 100px;*/
+	position: relative;
 }
 
 #navright ul
@@ -122,15 +144,23 @@ a:hover
 
 #main
 {
-	width: 1200px;
+	/*width: 1200px;*/
+	position:relative;
 	line-height: 160%;
 	padding: 15px 0 0 0;
-	border-bottom: 2px solid #000;
+	/*background: #B6B1A9;*/
+	/*background-color: lightblue;*/
+
+
+	/*border-bottom: 2px solid #000;*/
 }
 
 #main p
 {
-	margin: 0 15px 15px 15px;	
+	margin: 0 15px 15px 15px;
+	font-size: 120%;
+	font-family: Helvetica, Arial, Verdana;
+	color: #666;	
 }
 
 #main h2, h3
@@ -146,7 +176,8 @@ a:hover
 #mainright
 {
 	float: left;
-	width: 500px;
+	/*width: 600px;*/
+	position: relative;
 	padding: 0 0px 0 0;	
 }
 
@@ -195,8 +226,51 @@ ul.tabs li
 #mainleft
 {
 	float: left;
-	width: 255px;
+	/*width: 400px;*/
+	position: relative;
 	padding: 0 30px 0 15px;
+}
+
+#mainleft_vin
+{
+	float: left;
+	position: relative;
+}
+
+#mainright_vin
+{
+	float: left;
+	position: relative;
+}
+
+#topguy
+{	
+	background-color: #FFFFFF;
+	border-radius: 15px;
+}
+
+
+#maincenter
+{
+	float: left;
+	/*width: 800px;*/
+	position: relative;
+	padding: 0 30px 0 15px;
+	border: 2px solid #006A96;
+	padding: 10px;
+    border-radius: 25px;
+    background-color: #F8F8F8;
+}
+
+#maincenter_col
+{
+	float: left;
+	/*width: 800px;*/
+	position: relative;
+	padding: 0 30px 0 15px;
+	/*border: 2px solid #006A96;*/
+	padding: 10px;
+    border-radius: 25px;
 }
 
 #mainleft .leftmenu
