@@ -1,2 +1,2 @@
 # vineetp13.github.io
-Potential homepage
+Ironing out some bugs with index; thank you for your patience :) 
