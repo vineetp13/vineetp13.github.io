@@ -9,7 +9,7 @@
 */
 
 .img-circle {
-    border-radius: 40%;
+    border-radius: 0%;
 }
 
 .selected {
@@ -27,8 +27,8 @@ body
 	padding: 0;
 	background: #fff;	
 	font-size: 100%;
-	font-family: Helvetica, Arial, Verdana;
-	color: #666;
+	/*font-family: Helvetica, Arial, Verdana;	
+	color: #666;*/
 	/*background-color: #B6B1A9;*/
 }
 
@@ -49,8 +49,8 @@ img
 	/*width: 1200px;
 	height: 85px;*/
 	position: relative;
-	border-bottom: 5px solid #006A96;
-	margin: 0 15px 15px 15px;
+	border-bottom: 3px solid #006A96;
+	margin: 0 0px 15px 0px;
 }
 
 #navleft
@@ -120,7 +120,7 @@ a
 
 a:hover
 {
-	color: #2eff29;
+	color: #006A96;
 }
 
 #navright ul li a
@@ -139,7 +139,7 @@ a:hover
 
 #navright ul li a:hover
 {	
-	color: #2eff29;
+	color: #006A96;
 }
 
 #main
@@ -159,18 +159,19 @@ a:hover
 {
 	margin: 0 15px 15px 15px;
 	font-size: 120%;
-	font-family: Helvetica, Arial, Verdana;
-	color: #666;	
+	/*font-family: Helvetica, Arial, Verdana;
+	color: #666;*/	
 }
 
 #main h2, h3
 {	
-	margin: 0 0 15px 0;
-	padding: 5px 15px;
-	font-size: 120%;
+	margin: 0 0 0px 0;
+	padding: 0px 15px;
+	font-size: 150%;
 	font-weight: normal;
 	color: #000;
-	border-bottom: 1px solid #E5E5E5;
+	border-bottom: 0px solid #E5E5E5;
+	font-family: "Source Sans Pro", Arial, Verdana;
 }
 
 #mainright
@@ -178,7 +179,8 @@ a:hover
 	float: left;
 	/*width: 600px;*/
 	position: relative;
-	padding: 0 0px 0 0;	
+	padding: 0 0px 0 0;		
+	font-family: "Source Sans Pro", Arial, Verdana;
 }
 
 ul.tabs
@@ -207,7 +209,7 @@ ul.tabs li
 
 #mainright img:hover.left
 {
-	border: 1px solid #2eff29;
+	border: 1px solid #006A96;
 }
 
 #mainright img.right
@@ -220,15 +222,24 @@ ul.tabs li
 
 #mainright img:hover.right
 {	
-	border: 1px solid #2eff29;
+	border: 1px solid #006A96;
 }
 
 #mainleft
 {
 	float: left;
+	text-align: left;
 	/*width: 400px;*/
 	position: relative;
-	padding: 0 30px 0 15px;
+	padding: 0 0px 0 0px;
+	font-family: "Source Sans Pro", Arial, Verdana;
+}
+
+#mainleft h2, h3
+{	
+	margin: 0 0 0 0;
+	padding: 0px 15px;
+	font-family: "Source Sans Pro", Arial, Verdana;
 }
 
 #mainleft_vin
@@ -249,17 +260,39 @@ ul.tabs li
 	border-radius: 15px;
 }
 
+.maincenter
+{
+	float: left;
+	/*width: 400px;*/
+	position: relative;
+	padding: 0 0px 0 0px;
+	border: 4px solid #F8F8F8;
+	padding: 10px;
+    border-radius: 25px;
+	font-family: "Source Sans Pro", Arial, Verdana;
+}
 
-#maincenter
+.maincenter_old
 {
 	float: left;
 	/*width: 800px;*/
 	position: relative;
-	padding: 0 30px 0 15px;
-	border: 2px solid #006A96;
+	padding: 0 0px 0 0px;	
+	/*border: 2px solid #006A96;*/
+	border: 4px solid #F8F8F8;
 	padding: 10px;
     border-radius: 25px;
-    background-color: #F8F8F8;
+    /*background-color: #F8F8F8;*/
+    font-family: "Source Sans Pro", Arial, Verdana;
+}
+
+.maincenter a
+{
+	display: inline;
+	padding: 0px 0px 0px 0px;
+	color: #006A96;	
+	text-decoration: none;
+	/*font-style: bold;	*/
 }
 
 #maincenter_col
@@ -267,30 +300,31 @@ ul.tabs li
 	float: left;
 	/*width: 800px;*/
 	position: relative;
-	padding: 0 30px 0 15px;
-	/*border: 2px solid #006A96;*/
-	padding: 10px;
+	padding: 10px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	/*border: 2px solid #006A96;*/	
     border-radius: 25px;
+    /*background-color: #F8F8F8;*/
 }
 
 #mainleft .leftmenu
 {
 	text-align: left;
 	margin: 5px 10px 5px 10px;	
-	font-weight: bold;	
+	/*font-weight: bold;*/
 }
 
 #mainleft .leftmenu a
 {
-	display: block;
-	padding: 0px 5px 0px 5px;	
-	color: #000;	
-	text-decoration: none;
+	display: inline;
+	/*padding: 0px 5px 0px 5px;*/
+	color: #006A96;	
+	text-decoration: none;	
 }
 
 #mainleft .leftmenu a:hover 
 {	
-	color: #2eff29;	
+	color: #006A96;	
 }
 
 #bottom
@@ -347,5 +381,5 @@ ul.tabs li
 
 #footerleft a:hover, #footerright a:hover
 {
-	color: #2eff29;
+	color: #006A96;
 }
