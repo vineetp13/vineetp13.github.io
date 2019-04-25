@@ -21,7 +21,18 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  
+  <script>
+    function myFunction() {
+  var x = document.getElementById("travel-2018");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+    </script>
+
+
   <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
   <!--- font -->
   <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />-->
@@ -193,10 +204,10 @@ function switch_tabs(obj) {
                     <p>As a Human-Computer Interaction researcher, I design, build, and evaluate social computing systems that enable people to perform complex, creative work personally-meaningful to them  <a href="https://twitter.com/intent/tweet?text=.%20%40vineet1pandey%20researches%20scalable%20techniques%20that%20enable%20groups%20of%20people%20to%20perform%20personally-meaningful%20work%20using%20online%20learning&url=http://vineetp13.github.io"><img src="images/twitter.png" style="height: 18px; position: relative; top: 2.25px; margin-right: 1px;"></img></a>.<br>
                         I am a Ph.D. Candidate in Computer Science, advised by <a href="http://d.ucsd.edu/srk/">Scott Klemmer</a> at <a href="http://designlab.ucsd.edu">UC&nbsp;San&nbsp;Diego Design Lab</a>.</p> 
 
-                    <p>My research uses scientific work (especially human microbiome research) as a petri-dish to create scalable techniques for <b> integrating learning and working</b>. My research platform <a href="http://gutinstinct.ucsd.edu/info">Gut Instinct </a> has been used by over 600 people from 30 countries to create novel hypotheses, design experiments, and replicate known results. My research systems have been deployed with the  <a href="http://americangut.org">American Gut Project</a> (world's largest crowdfunded citizen science project), <a href="http://openhumans.org">Open Humans</a>, and many other communities. I have published at leading HCI and Learning conferences.</p>
+                    <p>My research uses scientific work (especially human microbiome research) as a petri-dish to create scalable techniques for <b> integrating learning and working</b>. My research platform <a href="http://gutinstinct.ucsd.edu/info">Gut Instinct </a> has been used by over 600 people from 30 countries to create novel hypotheses, design experiments, and replicate known results. My research systems have been deployed with the  <a href="http://americangut.org">American Gut Project</a> (world's largest crowdfunded citizen science project), <a href="http://openhumans.org">Open Humans</a>, and many other communities. I have published at leading HCI and Learning conferences. I have shared my work with numerous communities including fermenters, makers, patients, and citizen science enthusiasts. </p>
 
                     <p>
-                        I want to enable people around the world to live more meaningful and fun lives by solving their own problems. Building online systems by by integrating technology, learning, and community gets me closer to this goal. And it's fun!
+                        I want to enable people around the world to live more meaningful and fun lives by solving their own problems. Building online systems by by integrating technology, learning, and community gets me closer to this goal. And it's a lot of fun too!
                     </p>
 
                     <!--<p> I'm lucky to have grown up in simpler times, in Ranchi, a small town in Eastern India. <a href="https://www.ted.com/speakers/rob_knight">Professor Rob Knight</a> </p>-->
@@ -212,13 +223,17 @@ function switch_tabs(obj) {
             <div id="mainleft" class="col-sm-2">
                <h3>Travel/Talks</h3>
                 <div class="leftmenu">
-                 2019&nbsp;<br>
+                 <b>2019&nbsp;</b><br>
                     <a href="https://www.asm.org/Events/ASM-Microbe/Scientific-Program"><b>American Society of &nbsp;Microbiology, SF, CA</b></a> <br>                    
                     <a href="https://hcic.org/hcic2019/index.phtml"><b>HCIC, Pajaro Dunes, CA</b></a> <br>
                     <a href="https://chi2019.acm.org/"><b>CHI 2019, Glasgow</b></a> <br>
-                    <a href="https://www.citizenscience.org/association/conferences/citsci2019/"><b>Citizen Science Conference, &nbsp;Raleigh, NC</b></a> <br>
-                    <a href="https://learningatscale.acm.org/las2019/">Learning@Scale Program &nbsp;Committee, Sunnyvale, CA</a> <br>
-                 2018&nbsp;<br>
+                    <a href="https://raghavan.usc.edu//2019-spring-computing-for-social-good/">USC Lecture, Computing for &nbsp;&nbsp;Social Good, LA, CA</a> <br>
+                    <a href="http://cc.acm.org/2019/">Creativity and Cognition &nbsp;Program Committee, Online</a> 
+                    <a href="https://www.citizenscience.org/association/conferences/citsci2019/">Citizen Science Conference, &nbsp;Raleigh, NC</a> <br>
+                    <a href="https://learningatscale.acm.org/las2019/">Learning at Scale Program &nbsp;Committee, Sunnyvale, CA</a> <br>
+                 <b>2018&nbsp;</b><br>
+                 <button onclick="myFunction()">Show more</button>
+                    <div id="travel-2018" style="display: none;">
                     <a href="https://hci.stanford.edu/">Stanford HCI Lunch, CA</a> <br>                    
                     <a href="https://cscw.acm.org/2018/submit/dc.html">CSCW Doctoral Colloqium, NYC</a> <br>
                     <a href="https://computerscience.uchicago.edu/">University of Chicago, IL</a> <br>
@@ -230,6 +245,7 @@ function switch_tabs(obj) {
                     <a href="https://www.lymedisease.org/event/mylymedata2018-save-date/">MyLymeData, San Ramon, CA</a> <br>
                     <a href="https://tsl.mit.edu/">MIT Teaching Systems, MA</a> <br>
                     <a href="https://evhippel.mit.edu/">MIT Innovation Lab, MA</a> <br>
+                     </div>
                     <!--Older: Gastro-entro thing, CHI 2016, CSCW 2016 <br><br>-->
                 </div>
             </div>
@@ -317,7 +333,7 @@ function switch_tabs(obj) {
                 <div class="col-sm-6">
                     <br>
                     <!--<img alt="Galileo logo" src="images/logos/galileo_logo.png.png" height="50" align="center">-->
-                    Papers: <!--<a href="stash/2018-Galileo-Scaling Citizen-led Experimentation with a Procedural Training Platform.pdf"></a>--> In Progress, <a href="publications/2018-CSCW-Doctoral Consortium-Creating_Scientific_Theories_with_Online_Communities_using_Gut_Instinct.pdf">CSCW2018 DC</a> <br>
+                    Papers: <!--<a href="stash/2018-Galileo-Scaling Citizen-led Experimentation with a Procedural Training Platform.pdf"></a>--> Under Review, <a href="publications/2018-CSCW-Doctoral Consortium-Creating_Scientific_Theories_with_Online_Communities_using_Gut_Instinct.pdf">CSCW2018 DC</a> <br>
 
                     Posters: <a href="posters/2018-Research_Expo-Kaung_Orr-Galileo.png">Research Expo</a><br> 
                     <!--<img alt="2018 Research Expo poster by Orr and Kaung about Galileo" src="posters/2018-Research_Expo-Kaung_Orr-Galileo.png" height="200" align="center"> -->                                        
@@ -374,9 +390,9 @@ function switch_tabs(obj) {
                 </font></b></p>
                 <div class="col-sm-12">
                     <img alt="talkabout+" src="images/systems/think-pair-share.png" height="100" align="center"><br>
-                    Pilot results from a Coursera class, suggest that participants prefer to exchange information with their peers using personal stories and connecting stories with curriculum increases participant engagement<br> 
+                    People prefer to exchange information with their peers using personal stories. Connecting stories with curriculum increases participant engagement<br> 
 
-                    Paper: <a href="papers/2015-LAS-WiP-StoryPedagogy.pdf"> LatS 2015 EA</a>
+                    Paper: <a href="papers/2015-LAS-WiP-StoryPedagogy.pdf"> LatS 2015 EA</a><br>
                     News: <a href="http://jacobsschoolofengineering.blogspot.com/2015/04/meet-engineers-of-tomorrow-vineet.html"> Jacobs School of Engineering </a> 
                     <a href="posters/posters/2015-LAS-poster-StoryPedagogy.png">Poster</a> <br>
                     Collaborators: <a target="_blank" href="http://yasminekotturi.com/">Yasmine Kotturi</a>, <a target="_blank" href="https://web.stanford.edu/~chinmay/">Chinmay Kulkarni, <a target="_blank" href="http://hci.stanford.edu/msb/">Michael Bernstein, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>
@@ -389,9 +405,9 @@ function switch_tabs(obj) {
                 </font></b></p>
                 <div class="col-sm-12">
                     <img alt="darwin" src="images/systems/darwin.png" height="180"><br>
-                    edit and fix: we explore the design space of a peer feedback system by modeling it using game theory. Our simulations show that incentivizing students to provide feedback requires the value obtained from receiving a feedback to exceed the cost of providing it by a large factor (greater than 7). Furthermore, hiding feedback from low-effort students incentivizes them to provide more feedback.<br> 
+                    Game theory simulations show that incentivizing students to provide feedback requires the value obtained from receiving a feedback to exceed the cost of providing it. Hiding feedback from low-effort students incentivizes them to provide more feedback.<br> 
 
-                    Paper: <a href="papers/2015-LAS-WiP-StoryPedagogy.pdf"> CSCW 2016 EA</a>
+                    Paper: <a href="papers/2015-LAS-WiP-StoryPedagogy.pdf"> CSCW 2016 EA</a><br>
                     News: <a href="http://jacobsschoolofengineering.blogspot.com/2015/04/meet-engineers-of-tomorrow-vineet.html"> Jacobs School of Engineering </a> 
                     <a href="publications/2016-CSCW-WiP-Darwin-GameTheory_for_PeerAssessment-poster.pdf">Poster</a> <a href="https://github.com/vineetp13/darwin">Code</a><br>
                     Collaborators: <a target="_blank" href="http://yasminekotturi.com/">Yasmine Kotturi</a>, <a target="_blank" href="https://web.stanford.edu/~chinmay/">Chinmay Kulkarni, <a target="_blank" href="http://hci.stanford.edu/msb/">Michael Bernstein, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>
@@ -420,83 +436,91 @@ function switch_tabs(obj) {
            <!--<a id="maincenter_col" name="pubs"><h2>Publications and more..</h2></a>   -->
               
             <div class="col-sm-8">
+                <h2>Full Papers</h2>
                 <p>                        
-                    <!--<a href="stash/2018-Galileo-Scaling Citizen-led Experimentation with a Procedural Training Platform.pdf"><b>Galileo: Scaling Citizen-led Experimentation with a Procedural Training Platform</b></a>
-                        <i><a href="#/"> In Submission </a></i><br> 
-                        <font size="2">Vineet Pandey, Tushar Koul, Chen Yang, <a target="_blank" href="https://knightlab.ucsd.edu/wordpress/?page_id=47"> Daniel McDonald, Rob Knight</a>, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a> </font>
+                    <a href="stash/Galileo-Roles_and_Procedural_Support_in_a_Social_Computing_System_for_Citizen_Experimentation.pdf"><b>Galileo: Roles and Procedural Support in a Social Computing System for Citizen Experimentation</b></a>
+                        <br><i><a href="#"> Under Review </a></i><br> 
+                        <font size="2">Vineet Pandey, <a target="_blank" href="https://www.linkedin.com/in/tusharkoul">Tushar Koul</a>, <a target="_blank" href="https://azureric.org/">Chen Yang</a>, <a target="_blank" href="https://knightlab.ucsd.edu/wordpress/?page_id=47"> Daniel McDonald, Rob Knight</a>, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a> </font>
                         <br>
-                        --->
+                        
 
-                    <a href="publications/2018-LAS-Docent-Transforming_personal_intuitions_to_scientific_hypotheses_through_content_learning_and_process_training.pdf"><b>Docent: Transforming personal intuitions to scientific hypotheses through content learning and process training</b></a>
-                        <i><a href="learningatscale.acm.org"> Learning at Scale 2018</a></i><br>
+                    <a href="publications/2018-LAS-Docent-Transforming_personal_intuitions_to_scientific_hypotheses_through_content_learning_and_process_training.pdf"><b>Docent: Transforming Personal Intuitions to Scientific Hypotheses through Content Learning and Process Training</b></a>
+                        <br><i><a href="learningatscale.acm.org">ACM Learning at Scale 2018</a></i><br>
                         <font size="2">Vineet Pandey, <a target="_blank" href="https://knightlab.ucsd.edu/wordpress/?page_id=47">A. Amir, J. Debelius, Embriette Hyde, Tomasz Kosciolek, Rob Knight</a>, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a></font>
                         <br>
 
                     <a href="publications/2017-CHI-GutInstinct-Creating_scientific_theories_with_online_learners.pdf"><b>Gut Instinct: Creating Scientific Theories with Online Learners</b></a>
-                        <i><a href="https://chi2017.acm.org/"> CHI 2017</a></i><br>
+                        <br><i><a href="https://chi2017.acm.org/">ACM CHI 2017</a></i><br>
                         <font size="2">Vineet Pandey, <a href="https://knightlab.ucsd.edu/wordpress/?page_id=47">A. Amir, J. Debelius, Embriette Hyde, Tomasz Kosciolek, Rob Knight</a>, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a></font>
                         <br>
                     
                     <a href="publications/2017-SIGMOD-Concerto-A High Concurrency Key-Value Store with Integrity.pdf"><b> Concerto: A High Concurrency Key-Value Store with Integrity</b></a>
-                        <i> <a href="sigmod">SIGMOD 2017</a></i><br>
+                        <br><i> <a href="sigmod">ACM SIGMOD 2017</a></i><br>
                         <font size="2"><a href="https://www.microsoft.com/en-us/research/group/database/">Arvind Arasu, Ken Eguro, Raghav Kaushik, Donald Kossmann, Pingfan Meng, Vineet Pandey, Ravi Ramamurthy</a></font>
                         <br>
 
                     <a href="publications/2016-CHI-FramingFeedback-camera-ready.pdf"> <b>Framing Feedback: Choosing Review Environment Features that Support High Quality Peer Assessment</b></a>
-                        <i><a target="_blank" href="https://chi2016.acm.org/">CHI 2016</a></i> <br> 
+                        <br><i><a target="_blank" href="https://chi2016.acm.org/">ACM CHI 2016</a></i> <br> 
                         <font size="2"><a href="http://pages.ucsd.edu/~cmhicks">Catherine M. Hicks</a>, Vineet Pandey, <a href="http://cseweb.ucsd.edu/~cafraser/">C. Ailie Fraser</a>, <a href="http://d.ucsd.edu/srk/">Scott Klemmer</a>
                         <br></font>
 
                     <a href="publications/2016-Technical Report-An_HCI_View_of_Configuration_Problems.pdf"><b>An HCI View of Configuration Problems</b></a>
-                        <i><a target="_blank" href="http://arxiv.org/abs/1601.01747"> arXiv 2016</a></i><br> 
+                        <br><i><a target="_blank" href="http://arxiv.org/abs/1601.01747"> arXiv 2016</a></i><br> 
                         <font size="2"><a target="_blank" href="http://cseweb.ucsd.edu/~tixu/">Tianyin Xu</a>, Vineet Pandey, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer </a></font>
                         <br>
 
                     <a href="publications/2014-JDA-paper-IntegerRepresentations.pdf"><b>Integer Representations towards Efficient Counting in the Bit Probe Model</b></a>
-                    <i> Journal of Discrete Algorithms 2014, TAMC 11 </i><br>
-                     <font size="2">Gerth S. Brodal, Mark Greve, Vineet Pandey, S. Srinivasa Rao</font>
+                    <br><i>Journal of Discrete Algorithms 2014, TAMC 11 </i><br>
+                     <font size="2"><a target="_blank" href="http://cs.au.dk/~gerth/">Gerth S. Brodal</a>, <a target="_blank" href="https://dblp.uni-trier.de/pers/hd/g/Greve:Mark">Mark Greve</a>, Vineet Pandey, <a target="_blank" href="https://scholar.google.com/citations?user=ZFDS3bEAAAAJ&hl=en">S. Srinivasa Rao</a></font>
 
                 </p>
 
             <h2>Extended Abstracts</h2>
                 <p>
-                    <a href="#"><b>(Upcoming) Citizen Microbiology: Moving beyond crowdsourcing to active, participatory science by the public</b></a>
-                    <i><a href="#/"> American Society of Microbiology 2019 </a></i><br> 
-                    <font size="2">Vineet Pandey, <a target="_blank" href="https://knightlab.ucsd.edu/wordpress/?page_id=47"> Daniel McDonald, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a>, Rob Knight</a></font>
-                    <br>
-                 
-                    <a target="_blank" href="publications/2016-CHI-Workshop-Education_across_borders-Technology_supported_mentoring_and_teambuilding.pdf"><b>Education across borders: Technology supported mentoring and teambuilding</b></a> <i><a target="_blank" href="https://hci4dacrossborders.wordpress.com/"> HCI Across Borders, CHI 2016</a></i><br>
+                    <a href="#"><b>Citizen Microbiology: Moving Beyond Crowdsourcing to Active, Participatory Science by the Public</b></a>
+                    <br><i><a href="https://www.asm.org/Events/ASM-Microbe/Home"> American Society of Microbiology 2019 </a></i><br> 
                     <font size="2">Vineet Pandey</font>
                     <br>
 
-                    <a target="_blank" href="publications/2016-CHI-Workshop-Education_across_borders-Technology_supported_mentoring_and_teambuilding.pdf"><b>Gut Instinct: Creating Scientific Theories with Online Communities</b></a> <i><a target="_blank" href="https://hci4dacrossborders.wordpress.com/">CSCW Doctoral Consortium 2018</a></i><br>
+                    <a target="_blank" href="publications/2019-CHI-Workshop-Social Applications for Inbodied Interaction- Improving Health Outcomes by Integrating Personal Knowledge, Community, and Data.pdf"><b>Improving Health Outcomes by Integrating Personal Knowledge, Community, and Data</b></a>
+                    <br><i><a target="_blank" href="https://bodyasstartingpoint.tumblr.com/">ACM CHI 2019 Workshop: Body As Starting Point</a></i><br>
+                    <font size="2">Vineet Pandey</font>
+                    <br>
+                 
+                    <a target="_blank" href="publications/2019-C&C-Reconstruction Reduces Fixation on Surface Details of Explanations.pdf"><b>Reconstruction Reduces Fixation on Surface Details of Explanations</b></a>
+                    <br><i><a target="_blank" href="https://cscw.acm.org/2018/submit/dc.html">ACM Creativity and Cognition 2019</a></i><br>
+                    <font size="2"><a target="_blank" href="https://www.samlau.me/">Sam Lau</a>, <a target="_blank" href="https://tngoon.github.io/">Tricia Ngoon</a>, Vineet Pandey, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a></font>
+                    <br>
+
+                    <a target="_blank" href="publications/2018-CSCW-Doctoral Consortium-Creating_Scientific_Theories_with_Online_Communities_using_Gut_Instinct"><b>Gut Instinct: Creating Scientific Theories with Online Communities</b></a>
+                    <br><i><a target="_blank" href="https://cscw.acm.org/2018/submit/dc.html">ACM CSCW Doctoral Consortium 2018</a></i><br>
                     <font size="2">Vineet Pandey</font>
                     <br>
                       
-                    <a target="_blank" href="posters/2018-ASM-AGP-Microsetta-Daniel.png"><b>Transitioning the American Gut Project to the Microsetta Initiative</b></a> <i><a target="_blank" href="https://hci4dacrossborders.wordpress.com/">American Society of Microbiology 2018</a></i><br>
-                    <font size="2">D. McDonald, A. Aksenov, A. Melnik, P. Dorrestein, L. Smarr, R. Sinha, V. Pandey, S. Klemmer, R. Knight</font>
+                    <a target="_blank" href="posters/2018-ASM-AGP-Microsetta-Daniel.png"><b>Transitioning the American Gut Project to the Microsetta Initiative</b></a>
+                    <br> <i><a target="_blank" href="https://www.asm.org/">American Society of Microbiology 2018</a></i><br>
+                    <font size="2">Daniel McDonald, Alexander Aksenov, Alexey Melnik, Pieter Dorrestein, Larry Smarr, Rashmi Sinha, Vineet Pandey, Scott Klemmer, Rob Knight</font>
                     <br>
 
-                    <a target="_blank" href="publications/2016-HCOMP-WiP-Integrating_citizen_science_with_online_learning_to_ask_better_questions.pdf"><b>Integrating Citizen Science with Online Learning to Ask Better Questions</b></a> <i><a>HCOMP 2016</a></i><br>
-                    <font size="2">V. Pandey, S. Klemmer, Amnon Amir, Justine Debelius, E. Hyde, Tomasz Kosciolek, R. Knight</font>
+                    <a target="_blank" href="publications/2016-HCOMP-WiP-Integrating_citizen_science_with_online_learning_to_ask_better_questions.pdf"><b>Integrating Citizen Science with Online Learning to Ask Better Questions</b></a>
+                    <br><i><a target="_blank" href="https://www.humancomputation.com/2016/">AAAI HCOMP 2016</a></i><br>
+                    <font size="2">Vineet Pandey, Scott Klemmer, Amnon Amir, Justine Debelius, Embriette Hyde, Tomasz Kosciolek, Rob Knight</font>
                     <br>
 
-                    <a target="_blank" href="publications/2016-CSCW-WiP-Darwin-GameTheory_for_PeerAssessment.pdf"><b>Game-theoretic models identify useful principles for peer collaboration in online learning platforms</b></a> <i><a target="_blank" href="https://hci4dacrossborders.wordpress.com/">CSCW 2016</a></i><br>
+                    <a target="_blank" href="publications/2016-CSCW-WiP-Darwin-GameTheory_for_PeerAssessment.pdf"><b>Game-theoretic Models Identify Useful Principles for Peer Collaboration in Online Learning Platforms</b></a> <i><a target="_blank" href="http://cscw.acm.org/2016/"><br>ACM CSCW 2016</a></i><br>
                     <font size="2">Vineet Pandey, <a target="_blank" href="http://pub.ist.ac.at/~kchatterjee/">Krishnendu Chatterjee</a></font>
                     <!-- <a target="_blank" href="publications/2016-CSCW-WiP-Darwin-GameTheory_for_PeerAssessment-poster.pdf"> -->
                     <br>
 
-                    <a target="_blank" href="publications/2016-HCOMP-WiP-Integrating_citizen_science_with_online_learning_to_ask_better_questions.pdf"><b>Connecting stories and pedagogy increases participant engagement in discussions</b></a> <i><a>Learning at Scale 2015</a></i><br>
-                    <font size="2">Vineet Pandey, <a target="_blank" href="http://yasminekotturi.com/">Yasmine Kotturi</a>, <a target="_blank" href="https://web.stanford.edu/~chinmay/">Chinmay Kulkarni, <a target="_blank" href="http://hci.stanford.edu/msb/">Michael Bernstein, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</font>
+                    <a target="_blank" href="publications/2016-CHI-Workshop-Education_across_borders-Technology_supported_mentoring_and_teambuilding.pdf"><b>Education Across Borders: Technology Supported Mentoring and Teambuilding</b></a>
+                    <br><i><a target="_blank" href="https://hci4dacrossborders.wordpress.com/">ACM CHI 2016 Workshop: HCI Across Borders</a></i><br>
+                    <font size="2">Vineet Pandey</font>
                     <br>
 
-                
-                        
-    
-                        <a href="http://learningatscale.acm.org/las2015/"> Learning@Scale 2015</a>
-                        <a target="_blank" href="publications/2015-LAS-WiP-StoryPedagogy.pdf"><img height="32" src="images/pdf-file-128.png" alt="pdf icon"></a>
-                        <a target="_blank" href="posters/2015-LAS-poster-StoryPedagogy.pdf">Poster</a>
-
+                    <a target="_blank" href="publications/2015-LAS-WiP-StoryPedagogy.pdf"><b>Connecting Stories and Pedagogy Increases Participant Engagement in Discussions</b></a> <a target="_blank" href="posters/2015-LAS-poster-StoryPedagogy.pdf">Poster</a>
+                    <br><i><a href="http://learningatscale.acm.org/las2015/">ACM Learning at Scale 2015</a></i><br>
+                    <font size="2">Vineet Pandey, <a target="_blank" href="http://yasminekotturi.com/">Yasmine Kotturi</a>, <a target="_blank" href="https://web.stanford.edu/~chinmay/">Chinmay Kulkarni, <a target="_blank" href="http://hci.stanford.edu/msb/">Michael Bernstein, <a target="_blank" href="http://d.ucsd.edu/srk/">Scott Klemmer</a></font>
+                    <br>
                         
                     </p>
 
@@ -506,6 +530,57 @@ function switch_tabs(obj) {
                 </font> 
 
                 </p>
+
+            <h2>Students Mentored</h2>
+                <p>
+                    <!--add image and years of grad-->
+                    <a href="https://aliyah-qt.github.io">Aliyah Clayton</a> <i> Cypress College -> UC Irvine BS </a></i><br> 
+                    <font size="2">*Summer Training Academy for Research Success (STARS) program</font><br>
+
+                    <a href="https://briansoe.com">Brian Soe</a>
+                    <i> CSE BS -> GE Digital -> PlanGrid </a></i><br> 
+
+                    <a href="https://azureric.org">Chen Yang</a>
+                    <i> CSE BS -> Google </a></i><br> 
+
+                    <a href="https://www.linkedin.com/in/codydoan">Cody Doan</a>
+                    <i> CSE BS -> ViaSat </a></i><br> 
+
+                    <a href="https://crystalkwok.github.io">Crystal Kwok</a>
+                    <i> Cognitive Science BS -> Bluebeam </a></i><br> 
+
+                    <a href="https://dingmei.me">Dingmei Gu</a>
+                    <i> CSE BS -> CSE MS </a></i><br> 
+
+                    <a href="https://linkedin.com/in/hewang985">Hedy Wang</a>
+                    <i> Cognitive Science BS 2021</a></i><br> 
+
+                    <a href="https://linkedin.com/in/kaung-yang-799858128">Kaung Yang</a>
+                    <i> CSE BS -> ServiceNow </a></i><br> 
+                    <font size="2">*CSE Early Research Scholars Program</font><br>
+
+                    <a href="http://liby.me">Liby Lee</a>
+                    <i> CSE BS -> U.Penn Ph.D. </a></i><br>
+
+                    <a href="https://www.linkedin.com/in/orr-toledano">Orr Toledano</a>                
+                    <i> CSE BS 2020 </a></i><br>
+                    <font size="2">*CSE Early Research Scholars Program</font><br>
+
+                    <a href="http://www.rachelwchen.com">Rachel Chen</a>
+                    <i> Cognitive Science BS -> Georgia Tech MS-HCI </a></i><br>
+
+                    Robert Goebel
+                    <i> High Tech High </a></i><br>
+
+                    <a href="https://www.samlau.me">Sam Lau</a>
+                    <i> Cognitive Science PhD </a></i><br> 
+
+                    <a href="https://www.linkedin.com/in/tusharkoul">Tushar Koul</a>
+                    <i> CSE MS 2017 -> TaskRabbit </a></i><br> 
+
+                    <br>
+                </p>
+
             </div>            
             </div>
             <p>This website is <b>heavily</b> inspired from Arvind Satyanarayan's <a href="https://arvindsatya.com">webpage</a></p>
