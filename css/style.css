@@ -166,7 +166,7 @@ a:hover
 #main h2, h3, h4, h5
 {	
 	margin: 0 0 0px 0;
-	padding: 0px 10px;
+	/*padding: 0px 10px;*/
 	font-size: 150%;
 	font-weight: normal;
 	color: #000;
@@ -177,9 +177,11 @@ a:hover
 #mainright
 {
 	float: left;
+	text-align: left;
 	/*width: 600px;*/
 	position: relative;
-	padding: 0 0px 0 0;		
+	/*padding: 0 0px 0 0;*/	
+	padding: 0px 10px;	
 	font-family: "Source Sans Pro", Arial, Verdana;
 }
 
@@ -231,11 +233,12 @@ ul.tabs li
 	text-align: left;
 	/*width: 400px;*/
 	position: relative;
-	padding: 0 0px 0 0px;
+	/*padding: 0 0px 0 0px;*/
+	padding: 0px 10px;
 	font-family: "Source Sans Pro", Arial, Verdana;
 }
 
-#mainleft h2, h3, h4
+#mainleft h2, h3, h4, h5
 {	
 	margin: 0 0 0 0;
 	padding: 0px 15px;
