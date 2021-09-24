@@ -1,0 +1,362 @@
+﻿New Table( "Fig4A-data 2",
+	Add Rows( 14 ),
+	New Script(
+		"Source",
+		Open(
+			"/Users/vineetpandey/Downloads/TACCESS work/__taccess analysis/july18 analysis/src/Correlation and Error analysis-2021-Jul19.xlsx",
+			Worksheets( "dom2019-AT-combine-sup+unsup-f4" ),
+			Use for all sheets( 1 ),
+			Concatenate Worksheets( 0 ),
+			Create Concatenation Column( 0 ),
+			Worksheet Settings(
+				1,
+				Has Column Headers( 1 ),
+				Number of Rows in Headers( 1 ),
+				Headers Start on Row( 1 ),
+				Data Starts on Row( 2 ),
+				Data Starts on Column( 1 ),
+				Data Ends on Row( 0 ),
+				Data Ends on Column( 0 ),
+				Replicated Spanned Rows( 1 ),
+				Replicated Spanned Headers( 0 ),
+				Suppress Hidden Rows( 1 ),
+				Suppress Hidden Columns( 1 ),
+				Suppress Empty Columns( 0 ),
+				Treat as Hierarchy( 0 ),
+				Multiple Series Stack( 0 ),
+				Import Cell Colors( 0 ),
+				Limit Column Detect( 0 ),
+				Column Separator String( "-" )
+			)
+		)
+	),
+	New Column( "BARS_Dominant_clinical_score",
+		Numeric,
+		"Continuous",
+		Format( "Best", 15 ),
+		Set Values( [2, 2, 3, 0.5, 2, 1, 1, 2, 3, 2.5, 2.5, ., ., .] )
+	),
+	New Column( "BARS_Dominant_predicted_clinic_2019",
+		Numeric,
+		"Continuous",
+		Format( "Best", 15 ),
+		Set Values(
+			[1.3509, 2.39618, 2.42255, 1.01899, 1.94865, 1.19862, 1.62701, 2.63176,
+			2.2904, 1.90136, 1.61651, ., ., .]
+		),
+		Set Display Width( 149 )
+	),
+	New Column( "Column 3",
+		Character,
+		"Nominal",
+		Set Values( {"", "", "", "", "", "", "", "", "", "", "", "", "", ""} )
+	),
+	New Column( "Column 4",
+		Character,
+		"Nominal",
+		Set Values( {"", "", "", "", "", "", "", "", "", "", "", "", "", ""} )
+	),
+	New Column( "BARS_Dominant_clinical_score 2",
+		Numeric,
+		"Continuous",
+		Format( "Best", 15 ),
+		Set Values( [2, 2, 0.5, 2.5, 2, 1, 1, 1.5, 2, 3, 2.5, 2.5, 2.5, 2.5] )
+	),
+	New Column( "BARS_Dominant_AH_median_S8",
+		Numeric,
+		"Continuous",
+		Format( "Best", 15 ),
+		Set Values(
+			[1.31647, 1.987785, 1.106185, 1.74718, 2.41886, 1.295315, 1.707655,
+			1.20729, 2.044655, 1.959965, 2.55132, 1.84176, 2.195185, 2.174145]
+		)
+	),
+	New Column( "BARS_Dominant_AH_median_S8-S1",
+		Numeric,
+		"Continuous",
+		Format( "Best", 12 ),
+		Set Selected,
+		Set Values(
+			[1.2544075, 1.885615, 1.02091, 1.8193875, 2.31768, 1.20281, 1.57351,
+			1.2386325, 1.9776, 1.76397, 2.433845, 1.7908275, 2.05748, 2.053245]
+		)
+	)
+) << Run Formulas;
+Graph Builder(
+	Size( 628, 651 ),
+	Variables(
+		X( :BARS_Dominant_clinical_score ),
+		X( :BARS_Dominant_clinical_score 2, Position( 1 ) ),
+		Y( :BARS_Dominant_predicted_clinic_2019 ),
+		Y( :BARS_Dominant_AH_median_S8, Position( 1 ) )
+	),
+	Elements(
+		Points( X( 1 ), X( 2 ), Y( 1 ), Y( 2 ), Legend( 11 ) ),
+		Line Of Fit(
+			X( 1 ),
+			X( 2 ),
+			Y( 1 ),
+			Y( 2 ),
+			Legend( 14 ),
+			Confidence of Fit( 0 )
+		)
+	),
+	SendToReport(
+		Dispatch(
+			{},
+			"BARS_Dominant_clinical_score",
+			ScaleBox,
+			{Min( -0.25 ), Max( 4.25 ), Inc( 1 ), Minor Ticks( 1 ),
+			Label Row( Set Font Size( 36 ) )}
+		),
+		Dispatch(
+			{},
+			"BARS_Dominant_predicted_clinic_2019",
+			ScaleBox,
+			{Min( -0.25 ), Max( 4.25 ), Inc( 1 ), Minor Ticks( 1 ),
+			Label Row( Set Font Size( 36 ) )}
+		),
+		Dispatch(
+			{},
+			"400",
+			ScaleBox,
+			{Legend Model(
+				11,
+				Base(
+					0,
+					0,
+					0,
+					Item ID(
+						"BARS_Dominant_predicted_clinic_2019 / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Base(
+					1,
+					0,
+					0,
+					Item ID(
+						"BARS_Dominant_AH_median_S8 / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Base(
+					2,
+					0,
+					2,
+					Item ID(
+						"BARS_Dominant_predicted_clinic_2019 / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Base(
+					3,
+					0,
+					0,
+					Item ID(
+						"BARS_Dominant_AH_median_S8 / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Properties(
+					0,
+					{Line Color( 3 ), Fill Color( 0 )},
+					Item ID(
+						"BARS_Dominant_predicted_clinic_2019 / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Properties(
+					1,
+					{Transparency( 0 )},
+					Item ID(
+						"BARS_Dominant_AH_median_S8 / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Properties(
+					2,
+					{Transparency( 0 )},
+					Item ID(
+						"BARS_Dominant_predicted_clinic_2019 / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Properties(
+					3,
+					{Line Color( 21 )},
+					Item ID(
+						"BARS_Dominant_AH_median_S8 / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Base(
+					-1,
+					0,
+					0,
+					Item ID(
+						"BARS_Dominant_AH_median_All / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Base(
+					-1,
+					0,
+					0,
+					Item ID(
+						"BARS_Dominant_AH_median_All / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Properties(
+					-1,
+					{Transparency( 0 )},
+					Item ID(
+						"BARS_Dominant_AH_median_All / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Properties(
+					-1,
+					{Line Color( 21 )},
+					Item ID(
+						"BARS_Dominant_AH_median_All / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Base(
+					-1,
+					0,
+					1,
+					Item ID(
+						"BARS_Dominant_AH_median_S7 / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Base(
+					-1,
+					0,
+					0,
+					Item ID(
+						"BARS_Dominant_AH_median_S7 / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Properties(
+					-1,
+					{Transparency( 0 )},
+					Item ID(
+						"BARS_Dominant_AH_median_S7 / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Properties(
+					-1,
+					{Line Color( 21 )},
+					Item ID(
+						"BARS_Dominant_AH_median_S7 / BARS_Dominant_clinical_score 2",
+						1
+					)
+				)
+			), Legend Model(
+				14,
+				Properties(
+					0,
+					{Line Color( 3 ), Line Style( "Dotted" ), Fill Color( 0 )},
+					Item ID(
+						"BARS_Dominant_predicted_clinic_2019 / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Properties(
+					1,
+					{Transparency( 0 )},
+					Item ID(
+						"BARS_Dominant_AH_median_S8 / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Properties(
+					2,
+					{Transparency( 0 )},
+					Item ID(
+						"BARS_Dominant_predicted_clinic_2019 / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Properties(
+					3,
+					{Line Color( 21 )},
+					Item ID(
+						"BARS_Dominant_AH_median_S8 / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Properties(
+					-1,
+					{Transparency( 0 )},
+					Item ID(
+						"BARS_Dominant_AH_median_S8-S1 / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Properties(
+					-1,
+					{Line Color( 19 )},
+					Item ID(
+						"BARS_Dominant_AH_median_S8-S1 / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Properties(
+					-1,
+					{Transparency( 0 )},
+					Item ID(
+						"BARS_Dominant_AH_median_All / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Properties(
+					-1,
+					{Line Color( 53 )},
+					Item ID(
+						"BARS_Dominant_AH_median_All / BARS_Dominant_clinical_score 2",
+						1
+					)
+				),
+				Properties(
+					-1,
+					{Line Color( 0 ), Transparency( 0 )},
+					Item ID(
+						"BARS_Dominant_AH_median_S7 / BARS_Dominant_clinical_score",
+						1
+					)
+				),
+				Properties(
+					-1,
+					{Line Color( 21 ), Line Width( 3 ), Fill Color( 0 )},
+					Item ID(
+						"BARS_Dominant_AH_median_S7 / BARS_Dominant_clinical_score 2",
+						1
+					)
+				)
+			)}
+		),
+		Dispatch(
+			{},
+			"X title",
+			TextEditBox,
+			{Set Font Size( 24 ), Set Text(
+				"Severity score assigned by a clinician"
+			)}
+		),
+		Dispatch(
+			{},
+			"Y title",
+			TextEditBox,
+			{Set Font Size( 24 ), Set Text(
+				"Severity score estimated with tool usage"
+			)}
+		)
+	)
+);
