@@ -157,7 +157,7 @@ a:hover
 #main p
 {
 	margin: 0 15px 15px 15px;
-	font-size: 110%;
+	font-size: 120%;
 	/*font-family: Helvetica, Arial, Verdana;*/
 	font-family: Avenir, Helvetica, Arial, Verdana;
 	/*color: #666;*/	
@@ -281,9 +281,8 @@ ul.tabs li
 	border: 4px solid #F8F8F8;
 	padding: 10px;
     border-radius: 25px;
-	/*font-family: "Source Sans Pro", Arial, Verdana;
-	*/
 	font-family: Avenir, Source Sans Pro, Arial, Verdana;
+	font-size: 110%;
 }
 
 .maincenter_old
